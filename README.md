@@ -120,18 +120,18 @@ Add screenshots of:
 
 ---
 
-## 👥 Team Members
 
+create by
 - Hamsa Adel
-- Team Member
-- Team Member
-- Team Member
+- Radwa Mohamed
+- Baraah Abdelmoneam
+
 
 ---
 
 ## 👨‍🏫 Instructor
 
-**Instructor Name**
+Ahmed Heary
 
 Email: instructor@email.com
 
