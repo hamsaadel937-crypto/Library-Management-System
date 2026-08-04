@@ -133,9 +133,7 @@ create by
 
 Ahmed Heary
 
-Email: instructor@email.com
 
----
 
 ## 🏛️ Organization
 
