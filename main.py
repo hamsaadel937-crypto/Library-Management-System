@@ -12,9 +12,77 @@ manager = LibraryManager()
 # بيانات تجريبية
 if len(manager.books) == 0:
 
-    manager.add_book("B001", "Clean Code", "Robert Martin", "Programming", 3)
-    manager.add_book("B002", "Python Crash Course", "Eric Matthes", "Programming", 5)
-    manager.add_book("B003", "The Hobbit", "Tolkien", "Fantasy", 2)
+    manager.add_book(
+        "B001",
+        "Clean Code",
+        "Robert Martin",
+        "Programming",
+        3
+    )
+
+    manager.add_book(
+        "B002",
+        "Python Crash Course",
+        "Eric Matthes",
+        "Programming",
+        5
+    )
+
+    manager.add_book(
+        "B003",
+        "Automate the Boring Stuff",
+        "Al Sweigart",
+        "Programming",
+        4
+    )
+
+    manager.add_book(
+        "B004",
+        "The Hobbit",
+        "Tolkien",
+        "Fantasy",
+        2
+    )
+
+    manager.add_book(
+        "B005",
+        "Harry Potter",
+        "J.K. Rowling",
+        "Fantasy",
+        6
+    )
+
+    manager.add_book(
+        "B006",
+        "The Lord of the Rings",
+        "Tolkien",
+        "Fantasy",
+        4
+    )
+
+    manager.add_book(
+        "B007",
+        "A Brief History of Time",
+        "Stephen Hawking",
+        "Science",
+        3
+    )
+
+    manager.add_book(
+        "B008",
+        "The Selfish Gene",
+        "Richard Dawkins",
+        "Science",
+        5
+    )
+
+    manager.add_book(
+        "B009",
+        "Cosmos",
+        "Carl Sagan",
+        "Science",
+        7
+    )
 
 
 while True:
@@ -32,6 +100,7 @@ while True:
     print("10. Display Borrowed Books")
     print("11. Export CSV")
     print("12. Bonus")
+    print("13. Statistical Analysis")
     print("0. Exit")
 
     choice = input("Enter Choice: ")
@@ -169,6 +238,10 @@ while True:
 
             print("\nCatalog:")
             print(manager.catalog())
+
+        elif choice == "13":
+
+            manager.statistical_analysis()
 
         elif choice == "0":
 
