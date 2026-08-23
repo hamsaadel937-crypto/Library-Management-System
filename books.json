@@ -4,7 +4,7 @@
         "title": "Clean Code",
         "author": "Robert Martin",
         "category": "Programming",
-        "available_copies": 3
+        "available_copies": 2
     },
     {
         "book_id": "B002",
@@ -32,6 +32,27 @@
         "title": "",
         "author": "",
         "category": "",
+        "available_copies": 1
+    },
+    {
+        "book_id": "A001",
+        "title": "Arabic ",
+        "author": "R_M",
+        "category": "Languges  ",
+        "available_copies": 8
+    },
+    {
+        "book_id": "A002",
+        "title": "Numeric",
+        "author": "B_M",
+        "category": "Math",
+        "available_copies": 15
+    },
+    {
+        "book_id": "A005",
+        "title": "PYthon",
+        "author": "A_R",
+        "category": "prgramming languge",
         "available_copies": 1
     }
 ]
