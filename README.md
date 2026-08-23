@@ -1,18 +1,99 @@
 # 📚 Library Management System
 
-A Python-based Library Management System designed to simplify book organization, borrowing, returning, searching, and data management through an efficient and user-friendly interface.
+A Python-based Library Management System designed to simplify book organization, borrowing, returning, searching, and data management through an efficient, reliable, and user-friendly interface.
+
+The system provides separate roles for the **Library Owner** and **Regular Users**, with different permissions and features for each role.
 
 ---
 
 ## 📖 Project Overview
 
-The Library Management System is a desktop/web application developed in Python to automate common library operations. It allows librarians to manage books, keep track of borrowed books, and store data safely using JSON files.
+The Library Management System is a Python application developed to automate common library operations and improve book management.
+
+The system is divided into two main roles:
+
+- 👨‍💼 **Library Owner**
+- 👤 **Regular User**
+
+The Library Owner is responsible for managing books and accessing administrative features, while regular users can search for books, borrow available books, return borrowed books, and view their borrowing records.
 
 The project follows a modular programming approach by separating the application into multiple Python files, making the code organized, reusable, and easy to maintain.
 
 ---
 
+## 👨‍💼 Owner System
+
+The Library Owner has administrative access to the library system.
+
+The Owner can:
+
+- ➕ Add New Books
+- ✏️ Update Book Information
+- ❌ Remove Books
+- 🔍 Search Books
+- 📚 Display All Books
+- ✅ Display Available Books
+- 📋 View All Borrowed Books
+- 📊 Perform Statistical Analysis
+- 📈 View Data Visualizations
+- 📄 Export Books to CSV
+- 💾 Manage Library Data
+
+---
+
+## 👤 User System
+
+Regular users can create their own accounts and use the library services.
+
+Users can:
+
+- 📝 Create a New Account
+- 🔐 Login with Username and Password
+- 👤 Use their Full Name
+- 🔍 Search Books by ID
+- 🔍 Search Books by Title
+- 🔍 Search Books by Author
+- 📚 Display Available Books
+- 📥 Borrow Books
+- 📤 Return Books
+- 📋 View Their Borrowed Books
+
+Each user has their own account and borrowing records.
+
+---
+
+## 🔐 Authentication & Permissions
+
+The system provides authentication for both the Library Owner and Regular Users.
+
+### 👨‍💼 Owner
+
+The Owner has full administrative permissions, including:
+
+- Book Management
+- Inventory Management
+- Borrowing Records
+- Statistical Analysis
+- Data Visualization
+- CSV Export
+
+### 👤 User
+
+Regular users have access to:
+
+- Book Search
+- Available Books
+- Borrowing
+- Returning
+- Their Own Borrowing Records
+
+This role-based structure prevents regular users from modifying the library inventory.
+
+---
+
 ## ✨ Features
+
+### 📚 Book Management
 
 - ➕ Add New Books
 - ❌ Remove Books
@@ -21,13 +102,61 @@ The project follows a modular programming approach by separating the application
 - 🔍 Search Books by Author
 - 📚 Display All Books
 - ✅ Display Available Books
+
+### 📥 Borrowing System
+
 - 📥 Borrow Books
 - 📤 Return Books
-- 📋 View Borrowed Books
-- 📄 Export Books to CSV
-- 💾 Automatic Data Saving
-- ⚠️ Exception Handling
-- 📝 Logging System
+- 📋 Track Borrowing Records
+- 👤 Associate Borrowing Records with Users
+
+### 🔐 User Management
+
+- 📝 User Registration
+- 🔑 User Login
+- 👤 Full Name
+- 🔐 Username & Password
+- 👨‍💼 Owner/User Role Separation
+
+### 📊 Statistical Analysis
+
+The system provides mathematical and statistical analysis of library data, including:
+
+- Mean
+- Median
+- Mode
+- Range
+- Variance
+- Standard Deviation
+- Quartiles
+- IQR
+- Outlier Detection
+- Skewness
+- Probability
+- Expected Value
+- Sampling
+- Confidence Interval
+- Hypothesis Testing
+- One-Way ANOVA
+- Linear Algebra
+
+### 📈 Data Visualization
+
+The system supports multiple charts:
+
+- 📊 Bar Chart
+- 📉 Histogram
+- 📦 Box Plot
+- 🔵 Scatter Plot
+- 📈 Line Chart
+
+### 💾 Data Management
+
+- JSON Data Storage
+- CSV Export
+- Automatic Data Saving
+- Logging System
+- Exception Handling
 
 ---
 
@@ -36,96 +165,71 @@ The project follows a modular programming approach by separating the application
 - Python
 - Streamlit
 - Pandas
-- JSON
-- CSV
+- NumPy
+- SciPy
+- Matplotlib
 - Pydantic
 - Dataclasses
+- JSON
+- CSV
 - Logging
+
+---
+
+## 🧠 Programming Concepts
+
+This project demonstrates several Python and Data Science concepts:
+
+- Object-Oriented Programming
+- Dataclasses
+- Pydantic Data Validation
+- Exception Handling
+- File Handling
+- JSON Data Storage
+- CSV Export
+- Logging
+- Modular Programming
+- Functions
+- `map()`
+- `filter()`
+- `reduce()`
+- `zip()`
+- NumPy Arrays
+- Statistical Analysis
+- Data Visualization
+- Linear Algebra
+- Probability
+- Sampling
+- Hypothesis Testing
+- ANOVA
 
 ---
 
 ## 📂 Project Structure
 
-```
-Library_System/
-│── app.py
-│── main.py
-│── models.py
-│── storage.py
-│── library_service.py
-│── books.json
-│── borrowed_books.json
-│── books.csv
-│── library.log
-```
-
+```text
+Library-Management-System/
+│
+├── app.py
+├── main.py
+├── models.py
+├── storage.py
+├── library_service.py
+│
+├── books.json
+├── borrowed_books.json
+├── users.json
+├── books.csv
+├── library.log
+│
+└── README.md
 ---
 
-## 🚀 How to Run
+## 👩‍💻 Created By
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YourUsername/Library-Management-System.git
-```
-
-### 2. Open the Project
-
-```bash
-cd Library-Management-System
-```
-
-### 3. Install Requirements
-
-```bash
-pip install streamlit pandas pydantic
-```
-
-### 4. Run the Streamlit App
-
-```bash
-streamlit run app.py
-```
-
-Or run the console version:
-
-```bash
-python main.py
-```
-
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-
-- Home Page
-- Display Books
-- Search Book
-- Add Book
-- Borrow Book
-- Return Book
-- Borrowed Books
-
----
-
-## 🎯 Future Improvements
-
-- Database Integration (SQLite/MySQL)
-- User Authentication
-- Book Cover Images
-- QR Code Support
-- Dashboard & Analytics
-- Due Date Notifications
-
----
-
-
-create by
 - Hamsa Adel
 - Radwa Mohamed
 - Baraah Abdelmoneam
-
 
 ---
 
@@ -133,7 +237,7 @@ create by
 
 Ahmed Heary
 
-
+---
 
 ## 🏛️ Organization
 
