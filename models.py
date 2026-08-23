@@ -6,7 +6,9 @@ from dataclasses import dataclass
 from pydantic import BaseModel
 
 
-# ================= Custom Exceptions =================
+# =========================================================
+# CUSTOM EXCEPTIONS
+# =========================================================
 
 class LibraryError(Exception):
     pass
@@ -24,7 +26,25 @@ class InsufficientCopiesError(LibraryError):
     pass
 
 
-# ================= Pydantic =================
+class UnauthorizedError(LibraryError):
+    pass
+
+
+class UserNotFoundError(LibraryError):
+    pass
+
+
+class DuplicateUserError(LibraryError):
+    pass
+
+
+class BorrowRecordNotFoundError(LibraryError):
+    pass
+
+
+# =========================================================
+# PYDANTIC BOOK VALIDATION
+# =========================================================
 
 class BookSchema(BaseModel):
 
@@ -35,7 +55,20 @@ class BookSchema(BaseModel):
     available_copies: int
 
 
-# ================= Book =================
+# =========================================================
+# PYDANTIC USER VALIDATION
+# =========================================================
+
+class UserSchema(BaseModel):
+
+    username: str
+    password: str
+    full_name: str
+
+
+# =========================================================
+# BOOK
+# =========================================================
 
 @dataclass
 class Book:
@@ -61,7 +94,33 @@ class Book:
         return f"{self.book_id} - {self.title}"
 
 
-# ================= Borrow Record =================
+# =========================================================
+# USER
+# =========================================================
+
+@dataclass
+class User:
+
+    username: str
+    password: str
+    full_name: str
+
+    def to_dict(self):
+
+        return {
+            "username": self.username,
+            "password": self.password,
+            "full_name": self.full_name
+        }
+
+    def __repr__(self):
+
+        return f"{self.username} - {self.full_name}"
+
+
+# =========================================================
+# BORROW RECORD
+# =========================================================
 
 @dataclass
 class BorrowRecord:
@@ -69,6 +128,7 @@ class BorrowRecord:
     record_id: str
     book_id: str
     borrower_name: str
+    username: str
     borrow_date: str
 
     def to_dict(self):
@@ -77,6 +137,7 @@ class BorrowRecord:
             "record_id": self.record_id,
             "book_id": self.book_id,
             "borrower_name": self.borrower_name,
+            "username": self.username,
             "borrow_date": self.borrow_date
         }
 
