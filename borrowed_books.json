@@ -1,0 +1,30 @@
+[
+    {
+        "record_id": "R1",
+        "book_id": "BK-100",
+        "borrower_name": "Hamsa Adel",
+        "username": "hamsa_adel",
+        "borrow_date": "2026-09-16"
+    },
+    {
+        "record_id": "R2",
+        "book_id": "BK-106",
+        "borrower_name": "Hamsa Adel",
+        "username": "hamsa_adel",
+        "borrow_date": "2026-09-16"
+    },
+    {
+        "record_id": "R3",
+        "book_id": "BK-107",
+        "borrower_name": "Hamsa Adel",
+        "username": "hamsa_adel",
+        "borrow_date": "2026-09-16"
+    },
+    {
+        "record_id": "R4",
+        "book_id": "BK-101",
+        "borrower_name": "Hamsa Adel",
+        "username": "hamsa_adel",
+        "borrow_date": "2026-09-16"
+    }
+]

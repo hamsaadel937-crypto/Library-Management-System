@@ -1,0 +1,142 @@
+[
+    {
+        "book_id": "BK-100",
+        "title": "Data Structures and Algorithms",
+        "author": "A. Tanenbaum",
+        "category": "Networks",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-101",
+        "title": "Advanced Data Science",
+        "author": "A. Tanenbaum",
+        "category": "Software Engineering",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-102",
+        "title": "Database System Concepts",
+        "author": "A. Tanenbaum",
+        "category": "Computer Science",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-103",
+        "title": "Machine Learning Yearning",
+        "author": "E. Gamma",
+        "category": "Software Engineering",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-104",
+        "title": "Data Structures and Algorithms",
+        "author": "E. Gamma",
+        "category": "AI & ML",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-105",
+        "title": "Machine Learning Yearning",
+        "author": "M. Fowler",
+        "category": "Networks",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-106",
+        "title": "Operating System Principles",
+        "author": "A. Tanenbaum",
+        "category": "Networks",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-107",
+        "title": "Clean Code",
+        "author": "A. Silberschatz",
+        "category": "Networks",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-108",
+        "title": "Operating System Principles",
+        "author": "E. Gamma",
+        "category": "Computer Science",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-109",
+        "title": "Design Patterns",
+        "author": "E. Gamma",
+        "category": "Software Engineering",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-110",
+        "title": "Advanced Data Science",
+        "author": "S. Russell",
+        "category": "AI & ML",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-111",
+        "title": "Computer Networking",
+        "author": "A. Tanenbaum",
+        "category": "Computer Science",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-112",
+        "title": "The Pragmatic Programmer",
+        "author": "M. Fowler",
+        "category": "Networks",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-113",
+        "title": "Advanced Data Science",
+        "author": "S. Russell",
+        "category": "Data Science",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-114",
+        "title": "Database System Concepts",
+        "author": "M. Fowler",
+        "category": "Computer Science",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-115",
+        "title": "Database System Concepts",
+        "author": "M. Fowler",
+        "category": "AI & ML",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-116",
+        "title": "Machine Learning Yearning",
+        "author": "A. Tanenbaum",
+        "category": "Computer Science",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-117",
+        "title": "Design Patterns",
+        "author": "A. Silberschatz",
+        "category": "AI & ML",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-118",
+        "title": "Deep Learning with Python",
+        "author": "S. Russell",
+        "category": "AI & ML",
+        "available_copies": 1
+    },
+    {
+        "book_id": "BK-119",
+        "title": "Computer Networking",
+        "author": "E. Gamma",
+        "category": "Software Engineering",
+        "available_copies": 1
+    }
+]
