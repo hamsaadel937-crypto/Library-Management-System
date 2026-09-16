@@ -1,0 +1,503 @@
+Transaction_ID,Book_ID,Book_Title,Category,Author,Member_ID,Member_Type,Borrow_Date,Due_Date,Return_Date,Status,Fine_Amount
+TRX-1001,BK-106,Operating System Principles,Networks,A. Tanenbaum,MEM-207,Faculty,2025-04-13,2025-04-27,2025-04-25,Returned On Time,0.0
+TRX-1002,BK-103,Machine Learning Yearning,Software Engineering,E. Gamma,MEM-201,Staff,2025-10-21,2025-11-04,2025-10-31,Returned On Time,0.0
+TRX-1003,BK-111,Computer Networking,Computer Science,A. Tanenbaum,MEM-241,Student,2025-07-07,2025-07-21,2025-07-19,Returned On Time,0.0
+TRX-1004,BK-118,Deep Learning with Python,AI & ML,S. Russell,MEM-202,General,2025-05-15,2025-05-29,2025-05-25,Returned On Time,0.0
+TRX-1005,BK-113,Advanced Data Science,Data Science,S. Russell,MEM-225,Student,2025-04-02,2025-04-16,2025-04-14,Returned On Time,0.0
+TRX-1006,BK-114,Database System Concepts,Computer Science,M. Fowler,MEM-249,Faculty,2025-01-02,2025-01-16,2025-01-14,Returned On Time,0.0
+TRX-1007,BK-117,Design Patterns,AI & ML,A. Silberschatz,MEM-209,General,2025-09-27,2025-10-11,2025-10-11,Returned On Time,0.0
+TRX-1008,BK-107,Clean Code,Networks,A. Silberschatz,MEM-246,Staff,2025-08-05,2025-08-19,2025-08-15,Returned On Time,0.0
+TRX-1009,BK-114,Introduction to Python,Computer Science,S. Russell,MEM-223,Student,2025-05-16,2025-05-30,2025-05-26,Returned On Time,0.0
+TRX-1010,BK-102,Database System Concepts,Computer Science,A. Tanenbaum,MEM-204,General,2025-02-10,2025-02-24,2025-03-07,Returned Late,27.5
+TRX-1011,BK-100,Data Structures and Algorithms,Networks,A. Tanenbaum,MEM-243,Faculty,2025-02-04,2025-02-18,2025-02-16,Returned On Time,0.0
+TRX-1012,BK-100,Clean Code,,E. Gamma,MEM-238,Student,2025-07-26,2025-08-09,2025-08-07,Returned On Time,0.0
+TRX-1013,BK-106,Introduction to Python,AI & ML,G. van Rossum,MEM-231,Faculty,2025-08-19,2025-09-02,2025-08-31,Returned On Time,0.0
+TRX-1014,BK-106,The Pragmatic Programmer,Software Engineering,E. Gamma,MEM-227,General,2025-02-14,2025-02-28,2025-02-24,Returned On Time,0.0
+TRX-1015,BK-111,Deep Learning with Python,AI & ML,E. Gamma,MEM-210,Student,2025-08-19,2025-09-02,2025-09-13,Returned Late,27.5
+TRX-1016,BK-119,Computer Networking,Software Engineering,E. Gamma,MEM-207,Faculty,2025-06-14,2025-06-28,2025-06-28,Returned On Time,0.0
+TRX-1017,BK-108,Operating System Principles,Computer Science,E. Gamma,MEM-248,Student,2025-09-25,2025-10-09,2025-10-05,Returned On Time,0.0
+TRX-1018,BK-116,Machine Learning Yearning,Computer Science,A. Tanenbaum,MEM-248,General,2025-08-08,2025-08-22,2025-08-18,Returned On Time,0.0
+TRX-1019,BK-118,Advanced Data Science,Networks,M. Fowler,MEM-225,General,2025-09-04,2025-09-18,2025-09-18,Returned On Time,0.0
+TRX-1020,BK-105,Machine Learning Yearning,Networks,M. Fowler,MEM-233,Faculty,2025-08-28,2025-09-11,2025-09-11,Returned On Time,0.0
+TRX-1021,BK-115,Database System Concepts,AI & ML,M. Fowler,MEM-235,Student,2025-05-27,2025-06-10,2025-06-08,Returned On Time,0.0
+TRX-1022,BK-107,Data Structures and Algorithms,Data Science,S. Russell,MEM-210,Student,2025-05-31,2025-06-14,2025-06-12,Returned On Time,0.0
+TRX-1023,BK-115,Design Patterns,Computer Science,M. Fowler,MEM-248,Student,2025-09-11,2025-09-25,2025-09-29,Returned Late,10.0
+TRX-1024,BK-108,Computer Networking,Software Engineering,A. Tanenbaum,MEM-247,Staff,2025-06-01,2025-06-15,2025-06-13,Returned On Time,0.0
+TRX-1025,BK-116,Machine Learning Yearning,AI & ML,E. Gamma,MEM-239,Faculty,2025-08-15,2025-08-29,2025-08-27,Returned On Time,0.0
+TRX-1026,BK-117,Advanced Data Science,,E. Gamma,MEM-234,Faculty,2025-06-18,2025-07-02,2025-06-28,Returned On Time,0.0
+TRX-1027,BK-115,Operating System Principles,Software Engineering,S. Russell,MEM-232,Faculty,2025-01-22,2025-02-05,2025-02-01,Returned On Time,0.0
+TRX-1028,BK-107,The Pragmatic Programmer,Software Engineering,A. Silberschatz,MEM-220,Faculty,2025-10-11,2025-10-25,2025-10-25,Returned On Time,0.0
+TRX-1029,BK-115,Database System Concepts,AI & ML,A. Tanenbaum,MEM-248,Student,2025-06-21,2025-07-05,2025-07-16,Returned Late,27.5
+TRX-1030,BK-102,Deep Learning with Python,Computer Science,G. van Rossum,MEM-223,Student,2025-06-30,2025-07-14,2025-07-12,Returned On Time,0.0
+TRX-1031,BK-100,Database System Concepts,Data Science,S. Russell,MEM-241,General,2025-02-27,2025-03-13,2025-03-24,Returned Late,27.5
+TRX-1032,BK-114,Artificial Intelligence: A Modern Approach,Data Science,A. Tanenbaum,MEM-241,General,2025-09-30,2025-10-14,2025-10-18,Returned Late,10.0
+TRX-1033,BK-106,Design Patterns,,A. Tanenbaum,MEM-249,General,2025-01-13,2025-01-27,2025-01-23,Returned On Time,0.0
+TRX-1034,BK-119,Introduction to Python,AI & ML,A. Tanenbaum,MEM-222,Student,2025-10-15,2025-10-29,2025-10-27,Returned On Time,0.0
+TRX-1035,BK-116,Operating System Principles,Data Science,E. Gamma,MEM-214,Student,2025-04-11,2025-04-25,2025-04-23,Returned On Time,0.0
+TRX-1036,BK-104,Data Structures and Algorithms,AI & ML,E. Gamma,MEM-244,Student,2025-02-16,2025-03-02,2025-03-02,Returned On Time,0.0
+TRX-1037,BK-117,Deep Learning with Python,Data Science,E. Gamma,MEM-218,Staff,2025-10-02,2025-10-16,2025-10-14,Returned On Time,0.0
+TRX-1038,BK-108,Deep Learning with Python,Networks,S. Russell,MEM-200,Student,2025-04-06,2025-04-20,2025-04-18,Returned On Time,0.0
+TRX-1039,BK-100,Data Structures and Algorithms,Networks,E. Gamma,MEM-228,Student,2025-03-17,2025-03-31,2025-03-29,Returned On Time,0.0
+TRX-1040,BK-113,Deep Learning with Python,Networks,S. Russell,MEM-229,General,2025-07-23,2025-08-06,2025-08-02,Returned On Time,0.0
+TRX-1041,BK-103,Introduction to Python,Networks,A. Silberschatz,MEM-209,General,2025-04-10,2025-04-24,2025-04-20,Returned On Time,0.0
+TRX-1042,BK-100,Machine Learning Yearning,Networks,G. van Rossum,MEM-203,Faculty,2025-09-04,2025-09-18,2025-09-29,Returned Late,27.5
+TRX-1043,BK-119,Machine Learning Yearning,AI & ML,A. Silberschatz,MEM-234,Faculty,2025-06-28,2025-07-12,2025-07-16,Returned Late,10.0
+TRX-1044,BK-107,Design Patterns,Software Engineering,M. Fowler,MEM-228,Student,2025-04-05,2025-04-19,2025-04-17,Returned On Time,0.0
+TRX-1045,BK-116,Design Patterns,Networks,A. Silberschatz,MEM-209,Student,2025-04-25,2025-05-09,2025-05-05,Returned On Time,0.0
+TRX-1046,BK-112,The Pragmatic Programmer,Networks,M. Fowler,MEM-224,Staff,2025-09-06,2025-09-20,2025-09-18,Returned On Time,0.0
+TRX-1047,BK-102,Introduction to Python,Software Engineering,M. Fowler,MEM-217,Student,2025-04-06,2025-04-20,2025-04-18,Returned On Time,0.0
+TRX-1048,BK-116,Data Structures and Algorithms,Networks,S. Russell,MEM-234,Student,2025-09-30,2025-10-14,2025-10-12,Returned On Time,0.0
+TRX-1049,BK-112,The Pragmatic Programmer,Software Engineering,S. Russell,MEM-235,Student,2025-08-21,2025-09-04,2025-09-08,Returned Late,10.0
+TRX-1050,BK-119,Database System Concepts,Data Science,G. van Rossum,MEM-204,Student,2025-01-25,2025-02-08,2025-02-06,Returned On Time,0.0
+TRX-1051,BK-115,Computer Networking,Networks,G. van Rossum,MEM-241,General,2025-08-11,2025-08-25,2025-08-21,Returned On Time,0.0
+TRX-1052,BK-110,Advanced Data Science,AI & ML,S. Russell,MEM-209,Staff,2025-09-10,2025-09-24,2025-09-28,Returned Late,10.0
+TRX-1053,BK-108,Advanced Data Science,Software Engineering,A. Silberschatz,MEM-201,Student,2025-06-14,2025-06-28,2025-06-24,Returned On Time,0.0
+TRX-1054,BK-119,Introduction to Python,Computer Science,G. van Rossum,MEM-203,Student,2025-09-09,2025-09-23,2025-09-19,Returned On Time,0.0
+TRX-1055,BK-109,Design Patterns,Software Engineering,E. Gamma,MEM-202,Student,2025-08-30,2025-09-13,2025-09-11,Returned On Time,0.0
+TRX-1056,BK-108,Data Structures and Algorithms,Computer Science,A. Tanenbaum,MEM-212,Student,2025-07-10,2025-07-24,2025-07-22,Returned On Time,0.0
+TRX-1057,BK-105,Design Patterns,AI & ML,G. van Rossum,MEM-231,Faculty,2025-05-29,2025-06-12,2025-06-08,Returned On Time,0.0
+TRX-1058,BK-103,Database System Concepts,Software Engineering,M. Fowler,MEM-217,Student,2025-01-14,2025-01-28,2025-01-24,Returned On Time,0.0
+TRX-1059,BK-102,Data Structures and Algorithms,Computer Science,A. Tanenbaum,MEM-211,General,2025-09-29,2025-10-13,2025-10-17,Returned Late,10.0
+TRX-1060,BK-107,Design Patterns,AI & ML,M. Fowler,MEM-225,Student,2025-06-27,2025-07-11,2025-07-07,Returned On Time,0.0
+TRX-1061,BK-116,Computer Networking,Computer Science,G. van Rossum,MEM-219,Faculty,2025-08-28,2025-09-11,2025-09-07,Returned On Time,0.0
+TRX-1062,BK-117,Database System Concepts,Networks,S. Russell,MEM-201,Student,2025-10-13,2025-10-27,2025-10-31,Returned Late,10.0
+TRX-1063,BK-100,Artificial Intelligence: A Modern Approach,Computer Science,A. Silberschatz,MEM-231,General,2025-09-24,2025-10-08,2025-10-06,Returned On Time,0.0
+TRX-1064,BK-116,Introduction to Python,Data Science,S. Russell,MEM-234,Student,2025-01-06,2025-01-20,2025-01-20,Returned On Time,0.0
+TRX-1065,BK-102,Clean Code,Networks,G. van Rossum,MEM-236,Staff,2025-03-24,2025-04-07,2025-04-03,Returned On Time,0.0
+TRX-1066,BK-118,Operating System Principles,Computer Science,S. Russell,MEM-239,Faculty,2025-04-05,2025-04-19,2025-04-15,Returned On Time,0.0
+TRX-1067,BK-102,The Pragmatic Programmer,Data Science,M. Fowler,MEM-200,Faculty,2025-08-10,2025-08-24,2025-08-24,Returned On Time,0.0
+TRX-1068,BK-114,Clean Code,,E. Gamma,MEM-201,Staff,2025-04-13,2025-04-27,2025-04-23,Returned On Time,0.0
+TRX-1069,BK-101,Advanced Data Science,Software Engineering,A. Tanenbaum,MEM-233,Student,2025-06-15,2025-06-29,2025-06-27,Returned On Time,0.0
+TRX-1070,BK-109,Database System Concepts,Computer Science,G. van Rossum,MEM-228,Student,2025-07-03,2025-07-17,2025-07-21,Returned Late,10.0
+TRX-1071,BK-104,Advanced Data Science,Networks,A. Silberschatz,MEM-212,Student,2025-02-12,2025-02-26,2025-02-22,Returned On Time,0.0
+TRX-1072,BK-115,The Pragmatic Programmer,AI & ML,M. Fowler,MEM-224,General,2025-07-14,2025-07-28,2025-07-26,Returned On Time,0.0
+TRX-1073,BK-118,Database System Concepts,Networks,G. van Rossum,MEM-217,Student,2025-01-22,2025-02-05,2025-02-01,Returned On Time,0.0
+TRX-1074,BK-113,Advanced Data Science,Computer Science,E. Gamma,MEM-225,Faculty,2025-03-14,2025-03-28,2025-03-24,Returned On Time,0.0
+TRX-1075,BK-110,Introduction to Python,Data Science,M. Fowler,MEM-200,Student,2025-09-10,2025-09-24,,Borrowed,0.0
+TRX-1076,BK-113,Design Patterns,AI & ML,E. Gamma,MEM-223,Staff,2025-06-03,2025-06-17,2025-06-13,Returned On Time,0.0
+TRX-1077,BK-114,Data Structures and Algorithms,Software Engineering,M. Fowler,MEM-244,General,2025-10-21,2025-11-04,2025-11-02,Returned On Time,0.0
+TRX-1078,BK-104,Deep Learning with Python,Data Science,S. Russell,MEM-216,Student,2025-05-06,2025-05-20,2025-05-16,Returned On Time,0.0
+TRX-1079,BK-103,Design Patterns,Software Engineering,S. Russell,MEM-244,Student,2025-08-16,2025-08-30,2025-08-28,Returned On Time,0.0
+TRX-1080,BK-116,Deep Learning with Python,Software Engineering,A. Silberschatz,MEM-240,Student,2025-06-29,2025-07-13,2025-07-13,Returned On Time,0.0
+TRX-1081,BK-112,Artificial Intelligence: A Modern Approach,Networks,S. Russell,MEM-232,Student,2025-10-04,2025-10-18,2025-10-14,Returned On Time,0.0
+TRX-1082,BK-110,Machine Learning Yearning,Computer Science,A. Tanenbaum,MEM-230,Student,2025-02-05,2025-02-19,,Borrowed,0.0
+TRX-1083,BK-110,Operating System Principles,Computer Science,E. Gamma,MEM-237,Faculty,2025-07-13,2025-07-27,2025-07-25,Returned On Time,0.0
+TRX-1084,BK-111,Clean Code,Data Science,E. Gamma,MEM-203,Student,2025-08-13,2025-08-27,2025-08-27,Returned On Time,0.0
+TRX-1085,BK-113,Artificial Intelligence: A Modern Approach,Networks,E. Gamma,MEM-210,General,2025-09-16,2025-09-30,2025-09-26,Returned On Time,0.0
+TRX-1086,BK-109,Deep Learning with Python,Data Science,G. van Rossum,MEM-239,Staff,2025-04-11,2025-04-25,2025-04-21,Returned On Time,0.0
+TRX-1087,BK-105,Data Structures and Algorithms,Software Engineering,E. Gamma,MEM-230,General,2025-08-24,2025-09-07,2025-09-05,Returned On Time,0.0
+TRX-1088,BK-101,Deep Learning with Python,Software Engineering,A. Tanenbaum,MEM-200,Staff,2025-03-01,2025-03-15,2025-03-19,Returned Late,10.0
+TRX-1089,BK-113,Deep Learning with Python,Software Engineering,G. van Rossum,MEM-236,Staff,2025-03-19,2025-04-02,2025-03-31,Returned On Time,0.0
+TRX-1090,BK-117,Machine Learning Yearning,Software Engineering,G. van Rossum,MEM-237,Faculty,2025-03-04,2025-03-18,2025-03-16,Returned On Time,0.0
+TRX-1091,BK-101,Clean Code,Software Engineering,A. Tanenbaum,MEM-205,General,2025-06-28,2025-07-12,2025-07-10,Returned On Time,0.0
+TRX-1092,BK-100,Operating System Principles,Software Engineering,M. Fowler,MEM-228,Student,2025-04-07,2025-04-21,2025-04-21,Returned On Time,0.0
+TRX-1093,BK-103,Artificial Intelligence: A Modern Approach,Data Science,A. Silberschatz,MEM-204,General,2025-04-28,2025-05-12,2025-05-16,Returned Late,10.0
+TRX-1094,BK-119,Machine Learning Yearning,Networks,G. van Rossum,MEM-228,Student,2025-06-22,2025-07-06,2025-07-06,Returned On Time,0.0
+TRX-1095,BK-103,Design Patterns,Software Engineering,A. Tanenbaum,MEM-204,Staff,2025-09-11,2025-09-25,2025-10-06,Returned Late,27.5
+TRX-1096,BK-114,Design Patterns,,M. Fowler,MEM-225,Faculty,2025-07-29,2025-08-12,2025-08-12,Returned On Time,0.0
+TRX-1097,BK-111,Deep Learning with Python,AI & ML,M. Fowler,MEM-204,General,2025-05-07,2025-05-21,2025-05-17,Returned On Time,0.0
+TRX-1098,BK-118,Machine Learning Yearning,Computer Science,E. Gamma,MEM-210,Student,2025-04-11,2025-04-25,,Borrowed,0.0
+TRX-1099,BK-100,Artificial Intelligence: A Modern Approach,Software Engineering,G. van Rossum,MEM-246,Student,2025-05-17,2025-05-31,2025-05-27,Returned On Time,0.0
+TRX-1100,BK-102,Operating System Principles,Computer Science,A. Silberschatz,MEM-210,General,2025-07-29,2025-08-12,2025-08-10,Returned On Time,0.0
+TRX-1101,BK-111,The Pragmatic Programmer,Software Engineering,E. Gamma,MEM-223,Faculty,2025-06-29,2025-07-13,2025-07-11,Returned On Time,0.0
+TRX-1102,BK-110,Artificial Intelligence: A Modern Approach,Data Science,M. Fowler,MEM-249,Faculty,2025-03-25,2025-04-08,2025-04-06,Returned On Time,0.0
+TRX-1103,BK-107,Introduction to Python,Computer Science,G. van Rossum,MEM-229,Staff,2025-07-30,2025-08-13,2025-08-11,Returned On Time,0.0
+TRX-1104,BK-115,Machine Learning Yearning,Software Engineering,A. Silberschatz,MEM-200,Staff,2025-06-24,2025-07-08,2025-07-06,Returned On Time,0.0
+TRX-1105,BK-105,Database System Concepts,AI & ML,S. Russell,MEM-207,General,2025-05-11,2025-05-25,2025-05-23,Returned On Time,0.0
+TRX-1106,BK-100,Data Structures and Algorithms,AI & ML,A. Silberschatz,MEM-206,Faculty,2025-09-04,2025-09-18,2025-09-14,Returned On Time,0.0
+TRX-1107,BK-107,Artificial Intelligence: A Modern Approach,Computer Science,G. van Rossum,MEM-202,General,2025-04-02,2025-04-16,2025-04-12,Returned On Time,0.0
+TRX-1108,BK-113,Machine Learning Yearning,Software Engineering,M. Fowler,MEM-236,Student,2025-08-11,2025-08-25,2025-08-23,Returned On Time,0.0
+TRX-1109,BK-100,Data Structures and Algorithms,Networks,A. Tanenbaum,MEM-247,Student,2025-02-05,2025-02-19,2025-02-19,Returned On Time,0.0
+TRX-1110,BK-104,Operating System Principles,Software Engineering,A. Silberschatz,MEM-201,Student,2025-04-29,2025-05-13,2025-05-09,Returned On Time,0.0
+TRX-1111,BK-108,Advanced Data Science,Networks,M. Fowler,MEM-234,General,2025-10-07,2025-10-21,2025-10-17,Returned On Time,0.0
+TRX-1112,BK-116,Advanced Data Science,Software Engineering,S. Russell,MEM-213,Staff,2025-08-25,2025-09-08,2025-09-06,Returned On Time,0.0
+TRX-1113,BK-113,Operating System Principles,Data Science,A. Silberschatz,MEM-228,Student,2025-08-03,2025-08-17,2025-08-17,Returned On Time,0.0
+TRX-1114,BK-109,Operating System Principles,Computer Science,E. Gamma,MEM-233,Faculty,2025-06-02,2025-06-16,2025-06-14,Returned On Time,0.0
+TRX-1115,BK-105,The Pragmatic Programmer,Data Science,M. Fowler,MEM-244,Faculty,2025-06-22,2025-07-06,2025-07-10,Returned Late,10.0
+TRX-1116,BK-113,Advanced Data Science,AI & ML,E. Gamma,MEM-242,Student,2025-06-30,2025-07-14,2025-07-14,Returned On Time,0.0
+TRX-1117,BK-107,The Pragmatic Programmer,AI & ML,S. Russell,MEM-238,Faculty,2025-04-08,2025-04-22,2025-04-20,Returned On Time,0.0
+TRX-1118,BK-100,Design Patterns,AI & ML,M. Fowler,MEM-218,Faculty,2025-07-20,2025-08-03,2025-08-03,Returned On Time,0.0
+TRX-1119,BK-116,Introduction to Python,Computer Science,G. van Rossum,MEM-242,Faculty,2025-01-25,2025-02-08,2025-02-04,Returned On Time,0.0
+TRX-1120,BK-111,Database System Concepts,Data Science,M. Fowler,MEM-218,Student,2025-01-17,2025-01-31,2025-03-03,Returned Late,77.5
+TRX-1121,BK-115,Machine Learning Yearning,Software Engineering,G. van Rossum,MEM-216,Faculty,2025-07-17,2025-07-31,,Borrowed,0.0
+TRX-1122,BK-108,Design Patterns,Data Science,S. Russell,MEM-222,Faculty,2025-03-27,2025-04-10,2025-04-21,Returned Late,27.5
+TRX-1123,BK-108,Database System Concepts,Data Science,A. Tanenbaum,MEM-222,Staff,2025-08-11,2025-08-25,2025-08-29,Returned Late,10.0
+TRX-1124,BK-109,Data Structures and Algorithms,Computer Science,E. Gamma,MEM-230,Student,2025-04-18,2025-05-02,2025-04-28,Returned On Time,0.0
+TRX-1125,BK-107,Design Patterns,AI & ML,S. Russell,MEM-203,Staff,2025-07-29,2025-08-12,2025-08-10,Returned On Time,0.0
+TRX-1126,BK-101,Data Structures and Algorithms,Software Engineering,A. Silberschatz,MEM-233,Student,2025-09-04,2025-09-18,2025-09-14,Returned On Time,0.0
+TRX-1127,BK-106,Operating System Principles,Networks,E. Gamma,MEM-248,Student,2025-09-02,2025-09-16,2025-09-14,Returned On Time,0.0
+TRX-1128,BK-109,Computer Networking,AI & ML,G. van Rossum,MEM-200,Student,2025-01-03,2025-01-17,2025-01-15,Returned On Time,0.0
+TRX-1129,BK-117,Clean Code,Computer Science,S. Russell,MEM-245,Student,2025-05-20,2025-06-03,2025-07-04,Returned Late,77.5
+TRX-1130,BK-105,Data Structures and Algorithms,Software Engineering,E. Gamma,MEM-212,General,2025-07-18,2025-08-01,,Borrowed,0.0
+TRX-1131,BK-118,Design Patterns,Software Engineering,A. Silberschatz,MEM-225,Student,2025-09-16,2025-09-30,2025-10-04,Returned Late,10.0
+TRX-1132,BK-116,Computer Networking,Software Engineering,M. Fowler,MEM-248,Student,2025-06-27,2025-07-11,2025-07-09,Returned On Time,0.0
+TRX-1133,BK-102,Artificial Intelligence: A Modern Approach,Networks,G. van Rossum,MEM-246,Student,2025-03-09,2025-03-23,2025-03-21,Returned On Time,0.0
+TRX-1134,BK-102,The Pragmatic Programmer,AI & ML,G. van Rossum,MEM-208,Student,2025-08-14,2025-08-28,2025-09-01,Returned Late,10.0
+TRX-1135,BK-104,The Pragmatic Programmer,Software Engineering,A. Silberschatz,MEM-223,Student,2025-02-07,2025-02-21,2025-02-17,Returned On Time,0.0
+TRX-1136,BK-105,Clean Code,AI & ML,G. van Rossum,MEM-227,Student,2025-03-22,2025-04-05,2025-04-01,Returned On Time,0.0
+TRX-1137,BK-118,Design Patterns,Software Engineering,A. Silberschatz,MEM-239,Faculty,2025-08-25,2025-09-08,2025-09-08,Returned On Time,0.0
+TRX-1138,BK-100,The Pragmatic Programmer,Software Engineering,S. Russell,MEM-212,Staff,2025-06-30,2025-07-14,2025-07-14,Returned On Time,0.0
+TRX-1139,BK-106,Clean Code,Software Engineering,G. van Rossum,MEM-230,Staff,2025-06-09,2025-06-23,2025-06-21,Returned On Time,0.0
+TRX-1140,BK-103,Advanced Data Science,Networks,G. van Rossum,MEM-211,Student,2025-08-12,2025-08-26,2025-08-22,Returned On Time,0.0
+TRX-1141,BK-107,Advanced Data Science,AI & ML,G. van Rossum,MEM-234,Student,2025-03-15,2025-03-29,2025-03-27,Returned On Time,0.0
+TRX-1142,BK-114,Clean Code,Networks,E. Gamma,MEM-203,Student,2025-08-30,2025-09-13,2025-09-24,Returned Late,27.5
+TRX-1143,BK-116,Design Patterns,Computer Science,E. Gamma,MEM-225,Student,2025-07-29,2025-08-12,2025-08-16,Returned Late,10.0
+TRX-1144,BK-103,The Pragmatic Programmer,Software Engineering,M. Fowler,MEM-211,Student,2025-02-02,2025-02-16,2025-02-14,Returned On Time,0.0
+TRX-1145,BK-101,Advanced Data Science,Networks,M. Fowler,MEM-216,Student,2025-02-08,2025-02-22,2025-02-20,Returned On Time,0.0
+TRX-1146,BK-101,Operating System Principles,Software Engineering,A. Tanenbaum,MEM-202,General,2025-08-24,2025-09-07,2025-09-03,Returned On Time,0.0
+TRX-1147,BK-104,The Pragmatic Programmer,AI & ML,E. Gamma,MEM-218,Student,2025-09-14,2025-09-28,2025-09-26,Returned On Time,0.0
+TRX-1148,BK-102,Introduction to Python,Computer Science,M. Fowler,MEM-217,General,2025-07-27,2025-08-10,2025-08-08,Returned On Time,0.0
+TRX-1149,BK-107,The Pragmatic Programmer,Data Science,M. Fowler,MEM-206,Faculty,2025-06-30,2025-07-14,2025-07-25,Returned Late,27.5
+TRX-1150,BK-114,Computer Networking,Computer Science,E. Gamma,MEM-243,Student,2025-01-09,2025-01-23,2025-01-19,Returned On Time,0.0
+TRX-1151,BK-101,Machine Learning Yearning,Software Engineering,G. van Rossum,MEM-216,Student,2025-10-01,2025-10-15,2025-10-15,Returned On Time,0.0
+TRX-1152,BK-105,The Pragmatic Programmer,Networks,S. Russell,MEM-232,General,2025-09-24,2025-10-08,2025-10-06,Returned On Time,0.0
+TRX-1153,BK-113,Artificial Intelligence: A Modern Approach,AI & ML,M. Fowler,MEM-232,Faculty,2025-08-30,2025-09-13,2025-09-11,Returned On Time,0.0
+TRX-1154,BK-112,Introduction to Python,Networks,M. Fowler,MEM-225,Student,2025-07-13,2025-07-27,2025-08-27,Returned Late,77.5
+TRX-1155,BK-114,Advanced Data Science,Data Science,M. Fowler,MEM-248,General,2025-05-03,2025-05-17,2025-05-13,Returned On Time,0.0
+TRX-1156,BK-108,Advanced Data Science,AI & ML,A. Silberschatz,MEM-227,Staff,2025-04-21,2025-05-05,2025-05-09,Returned Late,10.0
+TRX-1157,BK-103,Artificial Intelligence: A Modern Approach,Data Science,E. Gamma,MEM-225,Student,2025-05-07,2025-05-21,2025-05-19,Returned On Time,0.0
+TRX-1158,BK-111,Data Structures and Algorithms,AI & ML,G. van Rossum,MEM-224,General,2025-05-02,2025-05-16,2025-05-14,Returned On Time,0.0
+TRX-1159,BK-118,Deep Learning with Python,Data Science,E. Gamma,MEM-217,Faculty,2025-02-06,2025-02-20,,Borrowed,0.0
+TRX-1160,BK-109,Database System Concepts,Software Engineering,G. van Rossum,MEM-228,Student,2025-07-26,2025-08-09,2025-08-05,Returned On Time,0.0
+TRX-1161,BK-119,Clean Code,AI & ML,M. Fowler,MEM-243,Staff,2025-06-01,2025-06-15,2025-06-13,Returned On Time,0.0
+TRX-1162,BK-101,Operating System Principles,Data Science,A. Silberschatz,MEM-235,Student,2025-08-31,2025-09-14,2025-09-12,Returned On Time,0.0
+TRX-1163,BK-112,Advanced Data Science,Networks,S. Russell,MEM-234,Staff,2025-04-10,2025-04-24,2025-05-05,Returned Late,27.5
+TRX-1164,BK-113,Advanced Data Science,Networks,G. van Rossum,MEM-237,Student,2025-04-21,2025-05-05,2025-05-03,Returned On Time,0.0
+TRX-1165,BK-106,Artificial Intelligence: A Modern Approach,,A. Tanenbaum,MEM-224,General,2025-03-07,2025-03-21,2025-03-25,Returned Late,10.0
+TRX-1166,BK-111,Machine Learning Yearning,AI & ML,G. van Rossum,MEM-222,Student,2025-01-10,2025-01-24,2025-01-20,Returned On Time,0.0
+TRX-1167,BK-109,Deep Learning with Python,Computer Science,S. Russell,MEM-204,Student,2025-06-20,2025-07-04,2025-07-15,Returned Late,27.5
+TRX-1168,BK-110,Clean Code,Networks,M. Fowler,MEM-236,Staff,2025-04-30,2025-05-14,2025-05-18,Returned Late,10.0
+TRX-1169,BK-111,The Pragmatic Programmer,Networks,M. Fowler,MEM-249,General,2025-10-20,2025-11-03,2025-11-14,Returned Late,27.5
+TRX-1170,BK-105,Clean Code,Networks,A. Tanenbaum,MEM-204,Student,2025-06-28,2025-07-12,2025-07-08,Returned On Time,0.0
+TRX-1171,BK-110,Advanced Data Science,Computer Science,A. Silberschatz,MEM-228,General,2025-08-11,2025-08-25,2025-08-21,Returned On Time,0.0
+TRX-1172,BK-105,Operating System Principles,Networks,M. Fowler,MEM-215,General,2025-01-08,2025-01-22,2025-02-22,Returned Late,77.5
+TRX-1173,BK-105,Clean Code,Data Science,S. Russell,MEM-225,Student,2025-04-24,2025-05-08,2025-05-04,Returned On Time,0.0
+TRX-1174,BK-116,Deep Learning with Python,Software Engineering,S. Russell,MEM-245,General,2025-01-01,2025-01-15,2025-01-11,Returned On Time,0.0
+TRX-1175,BK-104,Computer Networking,Data Science,E. Gamma,MEM-227,Student,2025-07-11,2025-07-25,2025-07-21,Returned On Time,0.0
+TRX-1176,BK-115,Computer Networking,Networks,G. van Rossum,MEM-230,Staff,2025-04-08,2025-04-22,2025-04-20,Returned On Time,0.0
+TRX-1177,BK-105,Advanced Data Science,Data Science,,MEM-240,Student,2025-05-09,2025-05-23,2025-05-19,Returned On Time,0.0
+TRX-1178,BK-114,Introduction to Python,AI & ML,A. Silberschatz,MEM-206,Faculty,2025-04-03,2025-04-17,2025-04-15,Returned On Time,0.0
+TRX-1179,BK-111,Artificial Intelligence: A Modern Approach,Data Science,A. Tanenbaum,MEM-234,Student,2025-09-22,2025-10-06,2025-10-04,Returned On Time,0.0
+TRX-1180,BK-105,Deep Learning with Python,Networks,G. van Rossum,MEM-225,Student,2025-05-13,2025-05-27,2025-05-25,Returned On Time,0.0
+TRX-1181,BK-114,The Pragmatic Programmer,Data Science,M. Fowler,MEM-242,Student,2025-04-17,2025-05-01,2025-04-27,Returned On Time,0.0
+TRX-1182,BK-103,The Pragmatic Programmer,Software Engineering,M. Fowler,MEM-220,Student,2025-10-02,2025-10-16,2025-10-12,Returned On Time,0.0
+TRX-1183,BK-119,The Pragmatic Programmer,Networks,M. Fowler,MEM-234,Faculty,2025-04-16,2025-04-30,2025-04-30,Returned On Time,0.0
+TRX-1184,BK-103,Design Patterns,Computer Science,E. Gamma,MEM-210,Student,2025-04-18,2025-05-02,2025-04-28,Returned On Time,0.0
+TRX-1185,BK-116,Design Patterns,Networks,A. Silberschatz,MEM-235,Student,2025-09-20,2025-10-04,2025-10-08,Returned Late,10.0
+TRX-1186,BK-114,The Pragmatic Programmer,Networks,E. Gamma,MEM-220,General,2025-01-26,2025-02-09,2025-02-05,Returned On Time,0.0
+TRX-1187,BK-109,Machine Learning Yearning,Computer Science,A. Silberschatz,MEM-226,Staff,2025-02-19,2025-03-05,2025-03-05,Returned On Time,0.0
+TRX-1188,BK-117,Database System Concepts,AI & ML,A. Silberschatz,MEM-232,Student,2025-03-10,2025-03-24,2025-03-20,Returned On Time,0.0
+TRX-1189,BK-116,Artificial Intelligence: A Modern Approach,Networks,A. Tanenbaum,MEM-227,Student,2025-01-11,2025-01-25,2025-01-21,Returned On Time,0.0
+TRX-1190,BK-101,Database System Concepts,Networks,A. Silberschatz,MEM-202,Student,2025-05-05,2025-05-19,2025-05-19,Returned On Time,0.0
+TRX-1191,BK-113,Database System Concepts,AI & ML,A. Silberschatz,MEM-237,Faculty,2025-06-16,2025-06-30,2025-06-30,Returned On Time,0.0
+TRX-1192,BK-103,Database System Concepts,Computer Science,S. Russell,MEM-205,Student,2025-07-15,2025-07-29,2025-07-27,Returned On Time,0.0
+TRX-1193,BK-111,The Pragmatic Programmer,Networks,E. Gamma,MEM-207,Faculty,2025-10-27,2025-11-10,2025-11-08,Returned On Time,0.0
+TRX-1194,BK-111,Advanced Data Science,Computer Science,A. Tanenbaum,MEM-233,Student,2025-04-26,2025-05-10,2025-05-06,Returned On Time,0.0
+TRX-1195,BK-112,Computer Networking,Data Science,E. Gamma,MEM-229,Student,2025-01-12,2025-01-26,2025-01-24,Returned On Time,0.0
+TRX-1196,BK-115,Data Structures and Algorithms,AI & ML,A. Tanenbaum,MEM-239,Student,2025-09-05,2025-09-19,2025-09-17,Returned On Time,0.0
+TRX-1197,BK-105,Artificial Intelligence: A Modern Approach,Data Science,S. Russell,MEM-215,Faculty,2025-08-14,2025-08-28,2025-08-24,Returned On Time,0.0
+TRX-1198,BK-112,Advanced Data Science,Computer Science,G. van Rossum,MEM-201,General,2025-06-29,2025-07-13,2025-07-09,Returned On Time,0.0
+TRX-1199,BK-105,Database System Concepts,Software Engineering,E. Gamma,MEM-236,Student,2025-01-12,2025-01-26,2025-02-06,Returned Late,27.5
+TRX-1200,BK-102,Machine Learning Yearning,Data Science,E. Gamma,MEM-213,Staff,2025-01-07,2025-01-21,2025-01-19,Returned On Time,0.0
+TRX-1201,BK-101,The Pragmatic Programmer,Data Science,A. Tanenbaum,MEM-217,General,2025-09-13,2025-09-27,2025-10-08,Returned Late,27.5
+TRX-1202,BK-100,Operating System Principles,Computer Science,E. Gamma,MEM-215,Staff,2025-01-25,2025-02-08,2025-02-08,Returned On Time,0.0
+TRX-1203,BK-103,Computer Networking,AI & ML,G. van Rossum,MEM-211,General,2025-04-06,2025-04-20,2025-04-18,Returned On Time,0.0
+TRX-1204,BK-105,The Pragmatic Programmer,Data Science,M. Fowler,MEM-222,Student,2025-01-05,2025-01-19,2025-01-19,Returned On Time,0.0
+TRX-1205,BK-110,Advanced Data Science,Networks,S. Russell,MEM-222,Student,2025-04-09,2025-04-23,2025-04-19,Returned On Time,0.0
+TRX-1206,BK-106,Deep Learning with Python,Computer Science,M. Fowler,MEM-203,General,2025-09-30,2025-10-14,2025-10-10,Returned On Time,0.0
+TRX-1207,BK-103,Deep Learning with Python,Data Science,G. van Rossum,MEM-234,Student,2025-04-02,2025-04-16,2025-04-14,Returned On Time,0.0
+TRX-1208,BK-104,Data Structures and Algorithms,Data Science,E. Gamma,MEM-226,Student,2025-08-18,2025-09-01,2025-08-28,Returned On Time,0.0
+TRX-1209,BK-106,Clean Code,Computer Science,G. van Rossum,MEM-220,Staff,2025-08-01,2025-08-15,2025-08-11,Returned On Time,0.0
+TRX-1210,BK-116,Database System Concepts,Computer Science,M. Fowler,MEM-210,Student,2025-09-13,2025-09-27,2025-09-23,Returned On Time,0.0
+TRX-1211,BK-119,Deep Learning with Python,Data Science,A. Tanenbaum,MEM-240,Faculty,2025-02-11,2025-02-25,2025-02-25,Returned On Time,0.0
+TRX-1212,BK-116,Machine Learning Yearning,Computer Science,S. Russell,MEM-200,Staff,2025-02-17,2025-03-03,2025-02-27,Returned On Time,0.0
+TRX-1213,BK-107,Clean Code,AI & ML,A. Tanenbaum,MEM-233,Student,2025-08-02,2025-08-16,2025-08-16,Returned On Time,0.0
+TRX-1214,BK-112,Database System Concepts,Networks,M. Fowler,MEM-200,Student,2025-01-08,2025-01-22,2025-01-18,Returned On Time,0.0
+TRX-1215,BK-112,Database System Concepts,Software Engineering,S. Russell,MEM-204,Faculty,2025-08-20,2025-09-03,2025-09-01,Returned On Time,0.0
+TRX-1216,BK-114,Database System Concepts,Software Engineering,M. Fowler,MEM-242,Student,2025-09-18,2025-10-02,2025-10-02,Returned On Time,0.0
+TRX-1217,BK-105,Deep Learning with Python,Computer Science,S. Russell,MEM-208,Student,2025-02-18,2025-03-04,2025-02-28,Returned On Time,0.0
+TRX-1218,BK-117,Design Patterns,Networks,M. Fowler,MEM-211,Student,2025-09-15,2025-09-29,2025-09-29,Returned On Time,0.0
+TRX-1219,BK-101,The Pragmatic Programmer,Data Science,S. Russell,MEM-239,Faculty,2025-06-02,2025-06-16,2025-06-14,Returned On Time,0.0
+TRX-1220,BK-117,Artificial Intelligence: A Modern Approach,,E. Gamma,MEM-219,Student,2025-10-15,2025-10-29,2025-10-27,Returned On Time,0.0
+TRX-1221,BK-106,Introduction to Python,AI & ML,S. Russell,MEM-246,Student,2025-05-29,2025-06-12,2025-07-13,Returned Late,77.5
+TRX-1222,BK-111,The Pragmatic Programmer,Software Engineering,S. Russell,MEM-221,Faculty,2025-09-26,2025-10-10,2025-10-06,Returned On Time,0.0
+TRX-1223,BK-117,Database System Concepts,AI & ML,G. van Rossum,MEM-221,Faculty,2025-07-08,2025-07-22,2025-07-22,Returned On Time,0.0
+TRX-1224,BK-106,Deep Learning with Python,Computer Science,G. van Rossum,MEM-246,Student,2025-07-05,2025-07-19,2025-07-15,Returned On Time,0.0
+TRX-1225,BK-100,Operating System Principles,Software Engineering,A. Silberschatz,MEM-233,Student,2025-01-10,2025-01-24,2025-01-24,Returned On Time,0.0
+TRX-1226,BK-101,Computer Networking,Networks,,MEM-235,Student,2025-03-31,2025-04-14,2025-04-18,Returned Late,10.0
+TRX-1227,BK-101,Clean Code,Computer Science,M. Fowler,MEM-210,Staff,2025-08-11,2025-08-25,2025-08-23,Returned On Time,0.0
+TRX-1228,BK-103,Operating System Principles,AI & ML,A. Silberschatz,MEM-223,Student,2025-06-03,2025-06-17,2025-06-15,Returned On Time,0.0
+TRX-1229,BK-109,Artificial Intelligence: A Modern Approach,AI & ML,M. Fowler,MEM-244,Student,2025-04-29,2025-05-13,2025-05-17,Returned Late,10.0
+TRX-1230,BK-104,Design Patterns,,M. Fowler,MEM-223,Faculty,2025-03-23,2025-04-06,2025-04-06,Returned On Time,0.0
+TRX-1231,BK-113,Database System Concepts,Networks,M. Fowler,MEM-229,General,2025-04-27,2025-05-11,2025-05-11,Returned On Time,0.0
+TRX-1232,BK-103,Data Structures and Algorithms,Computer Science,S. Russell,MEM-217,Student,2025-04-23,2025-05-07,2025-05-05,Returned On Time,0.0
+TRX-1233,BK-112,Introduction to Python,Computer Science,E. Gamma,MEM-203,Student,2025-02-16,2025-03-02,2025-02-26,Returned On Time,0.0
+TRX-1234,BK-110,Data Structures and Algorithms,Computer Science,A. Silberschatz,MEM-215,Student,2025-03-02,2025-03-16,2025-04-16,Returned Late,77.5
+TRX-1235,BK-112,Artificial Intelligence: A Modern Approach,Computer Science,A. Tanenbaum,MEM-244,Staff,2025-02-04,2025-02-18,2025-02-16,Returned On Time,0.0
+TRX-1236,BK-104,Operating System Principles,Computer Science,G. van Rossum,MEM-209,General,2025-03-11,2025-03-25,2025-03-25,Returned On Time,0.0
+TRX-1237,BK-102,Introduction to Python,Computer Science,M. Fowler,MEM-205,Student,2025-06-23,2025-07-07,2025-07-07,Returned On Time,0.0
+TRX-1238,BK-103,Clean Code,AI & ML,A. Silberschatz,MEM-229,Student,2025-06-12,2025-06-26,2025-06-22,Returned On Time,0.0
+TRX-1239,BK-115,Artificial Intelligence: A Modern Approach,Data Science,S. Russell,MEM-212,Student,2025-08-16,2025-08-30,2025-08-26,Returned On Time,0.0
+TRX-1240,BK-103,Advanced Data Science,Computer Science,A. Tanenbaum,MEM-206,Student,2025-06-09,2025-06-23,2025-06-23,Returned On Time,0.0
+TRX-1241,BK-106,Clean Code,Data Science,A. Silberschatz,MEM-243,Staff,2025-05-22,2025-06-05,2025-06-05,Returned On Time,0.0
+TRX-1242,BK-102,Data Structures and Algorithms,Data Science,G. van Rossum,MEM-223,Student,2025-06-10,2025-06-24,2025-06-20,Returned On Time,0.0
+TRX-1243,BK-106,Artificial Intelligence: A Modern Approach,Computer Science,S. Russell,MEM-223,Student,2025-01-28,2025-02-11,2025-02-11,Returned On Time,0.0
+TRX-1244,BK-116,Advanced Data Science,Data Science,S. Russell,MEM-209,Student,2025-01-02,2025-01-16,2025-01-16,Returned On Time,0.0
+TRX-1245,BK-115,Database System Concepts,Networks,E. Gamma,MEM-211,Student,2025-10-21,2025-11-04,2025-11-08,Returned Late,10.0
+TRX-1246,BK-116,Data Structures and Algorithms,Networks,M. Fowler,MEM-225,Student,2025-08-02,2025-08-16,2025-08-12,Returned On Time,0.0
+TRX-1247,BK-119,Deep Learning with Python,,G. van Rossum,MEM-240,Faculty,2025-10-11,2025-10-25,2025-10-25,Returned On Time,0.0
+TRX-1248,BK-102,Machine Learning Yearning,AI & ML,S. Russell,MEM-241,Student,2025-09-19,2025-10-03,2025-10-01,Returned On Time,0.0
+TRX-1249,BK-110,Database System Concepts,Networks,A. Tanenbaum,MEM-210,Student,2025-03-15,2025-03-29,2025-03-25,Returned On Time,0.0
+TRX-1250,BK-104,Clean Code,Computer Science,E. Gamma,MEM-239,Faculty,2025-09-25,2025-10-09,2025-10-05,Returned On Time,0.0
+TRX-1251,BK-117,The Pragmatic Programmer,Computer Science,M. Fowler,MEM-200,Student,2025-01-08,2025-01-22,2025-01-26,Returned Late,10.0
+TRX-1252,BK-103,Artificial Intelligence: A Modern Approach,Software Engineering,S. Russell,MEM-211,Staff,2025-01-16,2025-01-30,,Borrowed,0.0
+TRX-1253,BK-112,Advanced Data Science,,M. Fowler,MEM-237,General,2025-02-28,2025-03-14,2025-03-10,Returned On Time,0.0
+TRX-1254,BK-100,Operating System Principles,Computer Science,M. Fowler,MEM-233,Student,2025-05-13,2025-05-27,2025-06-27,Returned Late,77.5
+TRX-1255,BK-105,Advanced Data Science,Software Engineering,M. Fowler,MEM-243,General,2025-08-01,2025-08-15,2025-08-11,Returned On Time,0.0
+TRX-1256,BK-115,Clean Code,AI & ML,A. Silberschatz,MEM-232,Student,2025-06-29,2025-07-13,2025-07-24,Returned Late,27.5
+TRX-1257,BK-110,Computer Networking,Computer Science,G. van Rossum,MEM-243,Student,2025-09-28,2025-10-12,2025-10-08,Returned On Time,0.0
+TRX-1258,BK-101,Advanced Data Science,Software Engineering,M. Fowler,MEM-246,Student,2025-07-20,2025-08-03,2025-08-03,Returned On Time,0.0
+TRX-1259,BK-102,Operating System Principles,Data Science,S. Russell,MEM-246,Student,2025-07-10,2025-07-24,2025-07-20,Returned On Time,0.0
+TRX-1260,BK-119,Operating System Principles,AI & ML,S. Russell,MEM-238,Staff,2025-09-09,2025-09-23,2025-09-23,Returned On Time,0.0
+TRX-1261,BK-101,Machine Learning Yearning,AI & ML,G. van Rossum,MEM-207,Student,2025-05-27,2025-06-10,2025-07-11,Returned Late,77.5
+TRX-1262,BK-107,Machine Learning Yearning,Data Science,E. Gamma,MEM-222,Student,2025-03-24,2025-04-07,2025-05-08,Returned Late,77.5
+TRX-1263,BK-119,Data Structures and Algorithms,Computer Science,A. Tanenbaum,MEM-218,General,2025-04-30,2025-05-14,2025-05-14,Returned On Time,0.0
+TRX-1264,BK-108,Introduction to Python,AI & ML,S. Russell,MEM-213,Faculty,2025-08-15,2025-08-29,2025-08-25,Returned On Time,0.0
+TRX-1265,BK-103,Deep Learning with Python,Data Science,S. Russell,MEM-245,Student,2025-04-30,2025-05-14,2025-05-10,Returned On Time,0.0
+TRX-1266,BK-116,Deep Learning with Python,Software Engineering,A. Tanenbaum,MEM-245,General,2025-09-12,2025-09-26,2025-09-26,Returned On Time,0.0
+TRX-1267,BK-111,Introduction to Python,Networks,G. van Rossum,MEM-208,General,2025-02-04,2025-02-18,2025-02-22,Returned Late,10.0
+TRX-1268,BK-112,Data Structures and Algorithms,AI & ML,E. Gamma,MEM-211,Student,2025-01-15,2025-01-29,2025-01-29,Returned On Time,0.0
+TRX-1269,BK-107,Clean Code,Software Engineering,E. Gamma,MEM-219,Staff,2025-06-28,2025-07-12,2025-07-08,Returned On Time,0.0
+TRX-1270,BK-111,Database System Concepts,AI & ML,A. Silberschatz,MEM-223,Faculty,2025-09-14,2025-09-28,2025-09-24,Returned On Time,0.0
+TRX-1271,BK-117,Introduction to Python,Networks,M. Fowler,MEM-205,Student,2025-05-16,2025-05-30,2025-05-26,Returned On Time,0.0
+TRX-1272,BK-112,Introduction to Python,,,MEM-234,Student,2025-06-26,2025-07-10,2025-07-08,Returned On Time,0.0
+TRX-1273,BK-107,The Pragmatic Programmer,AI & ML,M. Fowler,MEM-232,Student,2025-09-02,2025-09-16,2025-09-14,Returned On Time,0.0
+TRX-1274,BK-108,Computer Networking,Networks,S. Russell,MEM-240,Staff,2025-10-04,2025-10-18,2025-10-16,Returned On Time,0.0
+TRX-1275,BK-112,The Pragmatic Programmer,Software Engineering,A. Tanenbaum,MEM-212,General,2025-02-14,2025-02-28,2025-02-26,Returned On Time,0.0
+TRX-1276,BK-107,Clean Code,Networks,,MEM-247,Student,2025-03-31,2025-04-14,2025-05-15,Returned Late,77.5
+TRX-1277,BK-113,Data Structures and Algorithms,Networks,S. Russell,MEM-246,General,2025-05-26,2025-06-09,2025-06-05,Returned On Time,0.0
+TRX-1278,BK-117,Clean Code,Software Engineering,M. Fowler,MEM-239,Staff,2025-08-13,2025-08-27,2025-08-25,Returned On Time,0.0
+TRX-1279,BK-101,Computer Networking,Data Science,A. Silberschatz,MEM-210,Faculty,2025-07-29,2025-08-12,2025-08-08,Returned On Time,0.0
+TRX-1280,BK-102,Operating System Principles,Software Engineering,G. van Rossum,MEM-201,Faculty,2025-10-23,2025-11-06,2025-11-10,Returned Late,10.0
+TRX-1281,BK-110,Introduction to Python,Networks,A. Silberschatz,MEM-236,Student,2025-02-18,2025-03-04,2025-02-28,Returned On Time,0.0
+TRX-1282,BK-105,Deep Learning with Python,Networks,E. Gamma,MEM-242,Student,2025-04-09,2025-04-23,2025-04-19,Returned On Time,0.0
+TRX-1283,BK-111,Advanced Data Science,Software Engineering,A. Tanenbaum,MEM-227,Faculty,2025-02-10,2025-02-24,2025-02-22,Returned On Time,0.0
+TRX-1284,BK-103,Deep Learning with Python,Computer Science,A. Silberschatz,MEM-227,Student,2025-07-15,2025-07-29,2025-07-25,Returned On Time,0.0
+TRX-1285,BK-118,Design Patterns,AI & ML,A. Silberschatz,MEM-227,Student,2025-05-06,2025-05-20,2025-05-18,Returned On Time,0.0
+TRX-1286,BK-107,Advanced Data Science,AI & ML,M. Fowler,MEM-237,Student,2025-04-23,2025-05-07,2025-05-03,Returned On Time,0.0
+TRX-1287,BK-102,The Pragmatic Programmer,Networks,M. Fowler,MEM-225,Student,2025-08-22,2025-09-05,2025-09-03,Returned On Time,0.0
+TRX-1288,BK-109,Clean Code,Data Science,G. van Rossum,MEM-236,General,2025-02-04,2025-02-18,2025-02-22,Returned Late,10.0
+TRX-1289,BK-116,The Pragmatic Programmer,AI & ML,S. Russell,MEM-244,General,2025-10-05,2025-10-19,2025-10-17,Returned On Time,0.0
+TRX-1290,BK-101,Artificial Intelligence: A Modern Approach,Networks,A. Tanenbaum,MEM-222,Student,2025-02-11,2025-02-25,2025-03-01,Returned Late,10.0
+TRX-1291,BK-113,Deep Learning with Python,Networks,M. Fowler,MEM-210,Faculty,2025-04-02,2025-04-16,2025-04-14,Returned On Time,0.0
+TRX-1292,BK-101,The Pragmatic Programmer,AI & ML,A. Tanenbaum,MEM-216,Staff,2025-04-14,2025-04-28,2025-04-26,Returned On Time,0.0
+TRX-1293,BK-106,Clean Code,AI & ML,G. van Rossum,MEM-216,Staff,2025-05-27,2025-06-10,2025-06-06,Returned On Time,0.0
+TRX-1294,BK-112,Deep Learning with Python,Networks,E. Gamma,MEM-210,Faculty,2025-01-05,2025-01-19,2025-01-19,Returned On Time,0.0
+TRX-1295,BK-111,Artificial Intelligence: A Modern Approach,Computer Science,A. Tanenbaum,MEM-218,Faculty,2025-04-18,2025-05-02,2025-04-30,Returned On Time,0.0
+TRX-1296,BK-103,Artificial Intelligence: A Modern Approach,Software Engineering,S. Russell,MEM-223,Student,2025-07-22,2025-08-05,2025-08-16,Returned Late,27.5
+TRX-1297,BK-113,The Pragmatic Programmer,Data Science,M. Fowler,MEM-246,Staff,2025-09-17,2025-10-01,2025-10-05,Returned Late,10.0
+TRX-1298,BK-107,Operating System Principles,Networks,S. Russell,MEM-216,Staff,2025-05-27,2025-06-10,2025-06-08,Returned On Time,0.0
+TRX-1299,BK-114,Data Structures and Algorithms,Data Science,E. Gamma,MEM-228,Student,2025-02-23,2025-03-09,2025-03-07,Returned On Time,0.0
+TRX-1300,BK-111,Advanced Data Science,Computer Science,A. Tanenbaum,MEM-229,General,2025-06-12,2025-06-26,,Borrowed,0.0
+TRX-1301,BK-106,Data Structures and Algorithms,,S. Russell,MEM-235,Staff,2025-01-01,2025-01-15,2025-01-11,Returned On Time,0.0
+TRX-1302,BK-108,Introduction to Python,AI & ML,A. Tanenbaum,MEM-201,Student,2025-01-23,2025-02-06,2025-02-04,Returned On Time,0.0
+TRX-1303,BK-105,The Pragmatic Programmer,,A. Tanenbaum,MEM-213,Staff,2025-06-22,2025-07-06,2025-07-06,Returned On Time,0.0
+TRX-1304,BK-105,Advanced Data Science,Computer Science,A. Silberschatz,MEM-241,Student,2025-07-07,2025-07-21,2025-07-17,Returned On Time,0.0
+TRX-1305,BK-101,Data Structures and Algorithms,Software Engineering,E. Gamma,MEM-226,Student,2025-08-19,2025-09-02,2025-08-31,Returned On Time,0.0
+TRX-1306,BK-112,Clean Code,Software Engineering,G. van Rossum,MEM-218,Faculty,2025-08-02,2025-08-16,2025-08-12,Returned On Time,0.0
+TRX-1307,BK-109,Design Patterns,AI & ML,E. Gamma,MEM-219,Faculty,2025-01-14,2025-01-28,2025-01-26,Returned On Time,0.0
+TRX-1308,BK-114,Artificial Intelligence: A Modern Approach,AI & ML,G. van Rossum,MEM-222,Staff,2025-01-12,2025-01-26,2025-01-24,Returned On Time,0.0
+TRX-1309,BK-101,The Pragmatic Programmer,Computer Science,M. Fowler,MEM-248,Student,2025-08-29,2025-09-12,2025-09-10,Returned On Time,0.0
+TRX-1310,BK-105,Introduction to Python,Data Science,S. Russell,MEM-205,Student,2025-06-06,2025-06-20,2025-07-01,Returned Late,27.5
+TRX-1311,BK-108,The Pragmatic Programmer,Data Science,M. Fowler,MEM-203,Staff,2025-05-21,2025-06-04,2025-06-02,Returned On Time,0.0
+TRX-1312,BK-118,Clean Code,,A. Silberschatz,MEM-222,Student,2025-08-05,2025-08-19,2025-08-19,Returned On Time,0.0
+TRX-1313,BK-110,Clean Code,Computer Science,M. Fowler,MEM-210,General,2025-10-08,2025-10-22,2025-10-18,Returned On Time,0.0
+TRX-1314,BK-111,Clean Code,Data Science,S. Russell,MEM-236,Student,2025-01-28,2025-02-11,2025-02-15,Returned Late,10.0
+TRX-1315,BK-113,Database System Concepts,AI & ML,S. Russell,MEM-206,Staff,2025-07-29,2025-08-12,2025-08-10,Returned On Time,0.0
+TRX-1316,BK-108,Computer Networking,Software Engineering,E. Gamma,MEM-221,Student,2025-04-19,2025-05-03,2025-05-03,Returned On Time,0.0
+TRX-1317,BK-107,Data Structures and Algorithms,AI & ML,A. Silberschatz,MEM-202,Student,2025-05-29,2025-06-12,2025-06-12,Returned On Time,0.0
+TRX-1318,BK-110,Database System Concepts,Networks,S. Russell,MEM-248,Student,2025-05-18,2025-06-01,2025-05-30,Returned On Time,0.0
+TRX-1319,BK-112,Clean Code,Data Science,E. Gamma,MEM-216,Student,2025-05-18,2025-06-01,2025-05-28,Returned On Time,0.0
+TRX-1320,BK-111,Artificial Intelligence: A Modern Approach,AI & ML,G. van Rossum,MEM-242,General,2025-07-07,2025-07-21,2025-07-19,Returned On Time,0.0
+TRX-1321,BK-115,Introduction to Python,AI & ML,A. Silberschatz,MEM-211,Student,2025-06-30,2025-07-14,2025-07-10,Returned On Time,0.0
+TRX-1322,BK-104,Artificial Intelligence: A Modern Approach,Networks,,MEM-232,Staff,2025-01-07,2025-01-21,2025-01-19,Returned On Time,0.0
+TRX-1323,BK-110,Clean Code,AI & ML,G. van Rossum,MEM-206,General,2025-06-09,2025-06-23,2025-06-27,Returned Late,10.0
+TRX-1324,BK-107,Artificial Intelligence: A Modern Approach,Software Engineering,M. Fowler,MEM-239,Student,2025-06-06,2025-06-20,2025-06-16,Returned On Time,0.0
+TRX-1325,BK-111,Design Patterns,AI & ML,A. Silberschatz,MEM-239,General,2025-05-13,2025-05-27,2025-05-25,Returned On Time,0.0
+TRX-1326,BK-108,Introduction to Python,Software Engineering,A. Silberschatz,MEM-243,Faculty,2025-01-26,2025-02-09,2025-02-13,Returned Late,10.0
+TRX-1327,BK-112,Clean Code,AI & ML,M. Fowler,MEM-210,Student,2025-02-18,2025-03-04,2025-03-15,Returned Late,27.5
+TRX-1328,BK-114,Computer Networking,Data Science,A. Silberschatz,MEM-248,General,2025-03-25,2025-04-08,2025-04-08,Returned On Time,0.0
+TRX-1329,BK-117,Artificial Intelligence: A Modern Approach,Software Engineering,A. Silberschatz,MEM-214,Student,2025-05-02,2025-05-16,2025-05-16,Returned On Time,0.0
+TRX-1330,BK-117,Design Patterns,Networks,E. Gamma,MEM-202,Student,2025-04-03,2025-04-17,2025-04-15,Returned On Time,0.0
+TRX-1331,BK-116,The Pragmatic Programmer,Networks,A. Silberschatz,MEM-210,Student,2025-03-11,2025-03-25,2025-03-21,Returned On Time,0.0
+TRX-1332,BK-111,The Pragmatic Programmer,Networks,S. Russell,MEM-217,Faculty,2025-06-03,2025-06-17,2025-06-13,Returned On Time,0.0
+TRX-1333,BK-101,Introduction to Python,Software Engineering,A. Tanenbaum,MEM-215,General,2025-09-04,2025-09-18,2025-09-16,Returned On Time,0.0
+TRX-1334,BK-103,Introduction to Python,,,MEM-219,Faculty,2025-04-03,2025-04-17,2025-04-15,Returned On Time,0.0
+TRX-1335,BK-104,Deep Learning with Python,AI & ML,A. Silberschatz,MEM-242,Student,2025-06-19,2025-07-03,2025-07-01,Returned On Time,0.0
+TRX-1336,BK-104,The Pragmatic Programmer,Computer Science,G. van Rossum,MEM-202,General,2025-06-22,2025-07-06,2025-07-02,Returned On Time,0.0
+TRX-1337,BK-101,Database System Concepts,Computer Science,S. Russell,MEM-228,Student,2025-04-27,2025-05-11,2025-05-07,Returned On Time,0.0
+TRX-1338,BK-113,Introduction to Python,Data Science,G. van Rossum,MEM-228,Faculty,2025-04-01,2025-04-15,2025-04-13,Returned On Time,0.0
+TRX-1339,BK-112,Operating System Principles,AI & ML,A. Silberschatz,MEM-210,Staff,2025-07-12,2025-07-26,2025-07-22,Returned On Time,0.0
+TRX-1340,BK-103,Clean Code,Software Engineering,A. Tanenbaum,MEM-220,Faculty,2025-10-09,2025-10-23,2025-10-27,Returned Late,10.0
+TRX-1341,BK-106,Design Patterns,Networks,G. van Rossum,MEM-213,Staff,2025-03-25,2025-04-08,2025-04-06,Returned On Time,0.0
+TRX-1342,BK-108,Database System Concepts,AI & ML,E. Gamma,MEM-226,Student,2025-09-28,2025-10-12,2025-10-16,Returned Late,10.0
+TRX-1343,BK-107,Operating System Principles,Data Science,G. van Rossum,MEM-223,Student,2025-01-04,2025-01-18,2025-01-14,Returned On Time,0.0
+TRX-1344,BK-119,Data Structures and Algorithms,Networks,G. van Rossum,MEM-230,Student,2025-06-18,2025-07-02,2025-06-28,Returned On Time,0.0
+TRX-1345,BK-104,Computer Networking,Data Science,E. Gamma,MEM-220,Student,2025-01-03,2025-01-17,2025-01-21,Returned Late,10.0
+TRX-1346,BK-111,Artificial Intelligence: A Modern Approach,Software Engineering,M. Fowler,MEM-246,Student,2025-01-30,2025-02-13,2025-02-11,Returned On Time,0.0
+TRX-1347,BK-113,Computer Networking,Software Engineering,E. Gamma,MEM-235,General,2025-01-22,2025-02-05,2025-02-03,Returned On Time,0.0
+TRX-1348,BK-109,Design Patterns,Software Engineering,A. Silberschatz,MEM-208,Student,2025-01-10,2025-01-24,2025-01-22,Returned On Time,0.0
+TRX-1349,BK-114,Computer Networking,Software Engineering,G. van Rossum,MEM-236,Student,2025-07-10,2025-07-24,2025-07-22,Returned On Time,0.0
+TRX-1350,BK-101,Machine Learning Yearning,Software Engineering,E. Gamma,MEM-200,Student,2025-06-16,2025-06-30,2025-07-04,Returned Late,10.0
+TRX-1351,BK-108,Computer Networking,Networks,E. Gamma,MEM-205,Faculty,2025-09-02,2025-09-16,2025-09-20,Returned Late,10.0
+TRX-1352,BK-114,Data Structures and Algorithms,Computer Science,S. Russell,MEM-202,Student,2025-04-10,2025-04-24,2025-04-24,Returned On Time,0.0
+TRX-1353,BK-118,The Pragmatic Programmer,AI & ML,A. Tanenbaum,MEM-239,Staff,2025-10-16,2025-10-30,2025-11-30,Returned Late,77.5
+TRX-1354,BK-118,Artificial Intelligence: A Modern Approach,Computer Science,S. Russell,MEM-248,Faculty,2025-07-12,2025-07-26,2025-07-24,Returned On Time,0.0
+TRX-1355,BK-115,Database System Concepts,Software Engineering,M. Fowler,MEM-215,Student,2025-03-30,2025-04-13,2025-04-09,Returned On Time,0.0
+TRX-1356,BK-118,Computer Networking,Networks,E. Gamma,MEM-202,General,2025-03-24,2025-04-07,2025-04-07,Returned On Time,0.0
+TRX-1357,BK-100,Introduction to Python,AI & ML,E. Gamma,MEM-210,Student,2025-05-20,2025-06-03,2025-06-03,Returned On Time,0.0
+TRX-1358,BK-113,Clean Code,Software Engineering,S. Russell,MEM-249,Student,2025-01-19,2025-02-02,2025-02-02,Returned On Time,0.0
+TRX-1359,BK-106,Operating System Principles,Computer Science,G. van Rossum,MEM-219,Faculty,2025-03-20,2025-04-03,2025-03-30,Returned On Time,0.0
+TRX-1360,BK-119,Machine Learning Yearning,Data Science,A. Silberschatz,MEM-240,General,2025-08-06,2025-08-20,2025-08-18,Returned On Time,0.0
+TRX-1361,BK-104,Deep Learning with Python,Computer Science,G. van Rossum,MEM-217,Staff,2025-08-07,2025-08-21,2025-08-19,Returned On Time,0.0
+TRX-1362,BK-101,Computer Networking,Software Engineering,A. Silberschatz,MEM-223,Faculty,2025-01-22,2025-02-05,2025-02-01,Returned On Time,0.0
+TRX-1363,BK-114,Artificial Intelligence: A Modern Approach,AI & ML,A. Tanenbaum,MEM-240,Student,2025-04-18,2025-05-02,2025-04-30,Returned On Time,0.0
+TRX-1364,BK-101,Artificial Intelligence: A Modern Approach,Software Engineering,E. Gamma,MEM-214,Faculty,2025-03-14,2025-03-28,2025-03-28,Returned On Time,0.0
+TRX-1365,BK-103,The Pragmatic Programmer,AI & ML,A. Silberschatz,MEM-228,Student,2025-03-24,2025-04-07,2025-04-03,Returned On Time,0.0
+TRX-1366,BK-118,Clean Code,Software Engineering,E. Gamma,MEM-235,Staff,2025-01-25,2025-02-08,2025-02-04,Returned On Time,0.0
+TRX-1367,BK-106,Introduction to Python,Computer Science,M. Fowler,MEM-218,General,2025-03-14,2025-03-28,2025-04-01,Returned Late,10.0
+TRX-1368,BK-115,Artificial Intelligence: A Modern Approach,Computer Science,A. Silberschatz,MEM-249,Staff,2025-06-27,2025-07-11,2025-07-07,Returned On Time,0.0
+TRX-1369,BK-114,Operating System Principles,Networks,A. Tanenbaum,MEM-208,Student,2025-09-05,2025-09-19,2025-09-15,Returned On Time,0.0
+TRX-1370,BK-117,Operating System Principles,Networks,,MEM-222,Student,2025-02-16,2025-03-02,2025-02-26,Returned On Time,0.0
+TRX-1371,BK-110,Advanced Data Science,Software Engineering,G. van Rossum,MEM-249,Staff,2025-06-10,2025-06-24,2025-06-24,Returned On Time,0.0
+TRX-1372,BK-109,Advanced Data Science,Software Engineering,M. Fowler,MEM-212,Staff,2025-04-01,2025-04-15,2025-04-13,Returned On Time,0.0
+TRX-1373,BK-108,Artificial Intelligence: A Modern Approach,Software Engineering,S. Russell,MEM-238,Student,2025-10-11,2025-10-25,2025-11-05,Returned Late,27.5
+TRX-1374,BK-101,Design Patterns,Software Engineering,A. Tanenbaum,MEM-237,Student,2025-04-24,2025-05-08,2025-05-08,Returned On Time,0.0
+TRX-1375,BK-101,Artificial Intelligence: A Modern Approach,Software Engineering,A. Silberschatz,MEM-212,Student,2025-09-13,2025-09-27,2025-09-25,Returned On Time,0.0
+TRX-1376,BK-114,Introduction to Python,Software Engineering,E. Gamma,MEM-237,Faculty,2025-04-12,2025-04-26,2025-04-22,Returned On Time,0.0
+TRX-1377,BK-109,Deep Learning with Python,Networks,,MEM-206,Staff,2025-03-25,2025-04-08,2025-04-06,Returned On Time,0.0
+TRX-1378,BK-111,Deep Learning with Python,Software Engineering,A. Silberschatz,MEM-222,Student,2025-03-02,2025-03-16,2025-03-14,Returned On Time,0.0
+TRX-1379,BK-113,Data Structures and Algorithms,Networks,M. Fowler,MEM-245,Student,2025-10-22,2025-11-05,2025-11-01,Returned On Time,0.0
+TRX-1380,BK-105,Database System Concepts,Networks,A. Tanenbaum,MEM-238,Student,2025-04-28,2025-05-12,2025-05-12,Returned On Time,0.0
+TRX-1381,BK-115,Database System Concepts,Computer Science,E. Gamma,MEM-208,Student,2025-06-14,2025-06-28,2025-06-26,Returned On Time,0.0
+TRX-1382,BK-115,Data Structures and Algorithms,Networks,S. Russell,MEM-239,General,2025-05-14,2025-05-28,2025-05-28,Returned On Time,0.0
+TRX-1383,BK-116,The Pragmatic Programmer,Data Science,A. Tanenbaum,MEM-213,Student,2025-04-25,2025-05-09,2025-05-05,Returned On Time,0.0
+TRX-1384,BK-113,Data Structures and Algorithms,Software Engineering,E. Gamma,MEM-214,Staff,2025-06-01,2025-06-15,2025-06-15,Returned On Time,0.0
+TRX-1385,BK-100,Database System Concepts,Software Engineering,A. Silberschatz,MEM-239,Staff,2025-05-21,2025-06-04,2025-06-08,Returned Late,10.0
+TRX-1386,BK-112,Introduction to Python,Networks,G. van Rossum,MEM-228,Student,2025-10-09,2025-10-23,2025-10-21,Returned On Time,0.0
+TRX-1387,BK-102,Data Structures and Algorithms,Data Science,S. Russell,MEM-238,Student,2025-08-29,2025-09-12,2025-09-12,Returned On Time,0.0
+TRX-1388,BK-102,Clean Code,Software Engineering,A. Silberschatz,MEM-215,Student,2025-06-05,2025-06-19,2025-06-19,Returned On Time,0.0
+TRX-1389,BK-115,Computer Networking,Software Engineering,M. Fowler,MEM-240,Faculty,2025-05-27,2025-06-10,2025-06-14,Returned Late,10.0
+TRX-1390,BK-113,Computer Networking,Data Science,A. Tanenbaum,MEM-247,Student,2025-05-16,2025-05-30,2025-06-03,Returned Late,10.0
+TRX-1391,BK-103,Deep Learning with Python,AI & ML,S. Russell,MEM-248,Student,2025-02-14,2025-02-28,,Borrowed,0.0
+TRX-1392,BK-109,Database System Concepts,Software Engineering,A. Tanenbaum,MEM-213,Student,2025-02-28,2025-03-14,2025-03-14,Returned On Time,0.0
+TRX-1393,BK-110,Design Patterns,Software Engineering,A. Tanenbaum,MEM-229,Student,2025-03-03,2025-03-17,2025-03-21,Returned Late,10.0
+TRX-1394,BK-101,Machine Learning Yearning,Computer Science,,MEM-207,Student,2025-10-22,2025-11-05,2025-11-05,Returned On Time,0.0
+TRX-1395,BK-118,Deep Learning with Python,Networks,A. Tanenbaum,MEM-206,Faculty,2025-08-08,2025-08-22,2025-08-20,Returned On Time,0.0
+TRX-1396,BK-102,Clean Code,Data Science,M. Fowler,MEM-241,Faculty,2025-03-03,2025-03-17,2025-03-13,Returned On Time,0.0
+TRX-1397,BK-115,Machine Learning Yearning,Software Engineering,S. Russell,MEM-239,Faculty,2025-04-04,2025-04-18,2025-04-22,Returned Late,10.0
+TRX-1398,BK-115,Introduction to Python,Data Science,A. Silberschatz,MEM-249,Student,2025-10-06,2025-10-20,2025-10-20,Returned On Time,0.0
+TRX-1399,BK-105,Computer Networking,Software Engineering,E. Gamma,MEM-202,Faculty,2025-05-09,2025-05-23,2025-05-21,Returned On Time,0.0
+TRX-1400,BK-113,The Pragmatic Programmer,AI & ML,E. Gamma,MEM-209,Faculty,2025-07-26,2025-08-09,2025-08-09,Returned On Time,0.0
+TRX-1401,BK-119,Design Patterns,Networks,M. Fowler,MEM-211,Student,2025-09-14,2025-09-28,2025-09-26,Returned On Time,0.0
+TRX-1402,BK-102,Clean Code,AI & ML,E. Gamma,MEM-249,Staff,2025-08-05,2025-08-19,2025-08-23,Returned Late,10.0
+TRX-1403,BK-106,Machine Learning Yearning,Networks,E. Gamma,MEM-217,Staff,2025-07-01,2025-07-15,2025-07-15,Returned On Time,0.0
+TRX-1404,BK-111,The Pragmatic Programmer,Networks,A. Tanenbaum,MEM-231,Faculty,2025-06-12,2025-06-26,2025-06-24,Returned On Time,0.0
+TRX-1405,BK-102,Operating System Principles,,A. Tanenbaum,MEM-220,Staff,2025-10-18,2025-11-01,2025-10-28,Returned On Time,0.0
+TRX-1406,BK-116,Operating System Principles,Software Engineering,A. Silberschatz,MEM-234,General,2025-07-16,2025-07-30,2025-08-03,Returned Late,10.0
+TRX-1407,BK-118,The Pragmatic Programmer,Data Science,A. Silberschatz,MEM-242,Faculty,2025-02-17,2025-03-03,2025-03-01,Returned On Time,0.0
+TRX-1408,BK-104,The Pragmatic Programmer,Networks,A. Tanenbaum,MEM-220,General,2025-09-03,2025-09-17,2025-09-21,Returned Late,10.0
+TRX-1409,BK-110,The Pragmatic Programmer,Networks,A. Silberschatz,MEM-226,Faculty,2025-07-29,2025-08-12,2025-08-08,Returned On Time,0.0
+TRX-1410,BK-108,The Pragmatic Programmer,Computer Science,S. Russell,MEM-209,Faculty,2025-03-05,2025-03-19,2025-03-23,Returned Late,10.0
+TRX-1411,BK-117,Introduction to Python,Networks,E. Gamma,MEM-213,Student,2025-04-22,2025-05-06,2025-05-02,Returned On Time,0.0
+TRX-1412,BK-107,Artificial Intelligence: A Modern Approach,AI & ML,E. Gamma,MEM-237,Faculty,2025-07-03,2025-07-17,2025-08-17,Returned Late,77.5
+TRX-1413,BK-116,Artificial Intelligence: A Modern Approach,Data Science,M. Fowler,MEM-225,Staff,2025-10-26,2025-11-09,2025-11-05,Returned On Time,0.0
+TRX-1414,BK-116,Operating System Principles,AI & ML,E. Gamma,MEM-242,Student,2025-02-14,2025-02-28,2025-03-31,Returned Late,77.5
+TRX-1415,BK-108,Database System Concepts,Software Engineering,M. Fowler,MEM-236,General,2025-08-27,2025-09-10,2025-09-10,Returned On Time,0.0
+TRX-1416,BK-113,Operating System Principles,AI & ML,G. van Rossum,MEM-211,Staff,2025-03-05,2025-03-19,2025-03-23,Returned Late,10.0
+TRX-1417,BK-101,Advanced Data Science,AI & ML,A. Silberschatz,MEM-233,Student,2025-02-19,2025-03-05,2025-03-01,Returned On Time,0.0
+TRX-1418,BK-104,Operating System Principles,Software Engineering,G. van Rossum,MEM-239,Student,2025-08-24,2025-09-07,2025-09-03,Returned On Time,0.0
+TRX-1419,BK-107,Machine Learning Yearning,AI & ML,A. Silberschatz,MEM-238,Student,2025-05-05,2025-05-19,2025-05-17,Returned On Time,0.0
+TRX-1420,BK-103,Advanced Data Science,Data Science,A. Tanenbaum,MEM-227,Faculty,2025-07-09,2025-07-23,2025-07-19,Returned On Time,0.0
+TRX-1421,BK-113,Machine Learning Yearning,Software Engineering,M. Fowler,MEM-247,Student,2025-05-25,2025-06-08,2025-06-06,Returned On Time,0.0
+TRX-1422,BK-109,Clean Code,Data Science,S. Russell,MEM-221,Staff,2025-06-25,2025-07-09,2025-07-07,Returned On Time,0.0
+TRX-1423,BK-109,Data Structures and Algorithms,Networks,S. Russell,MEM-231,General,2025-05-28,2025-06-11,2025-06-07,Returned On Time,0.0
+TRX-1424,BK-108,Deep Learning with Python,AI & ML,E. Gamma,MEM-218,Faculty,2025-09-06,2025-09-20,2025-09-24,Returned Late,10.0
+TRX-1425,BK-103,The Pragmatic Programmer,Computer Science,E. Gamma,MEM-239,Student,2025-08-17,2025-08-31,2025-08-29,Returned On Time,0.0
+TRX-1426,BK-113,Artificial Intelligence: A Modern Approach,AI & ML,M. Fowler,MEM-238,General,2025-06-09,2025-06-23,2025-06-19,Returned On Time,0.0
+TRX-1427,BK-102,Deep Learning with Python,Software Engineering,G. van Rossum,MEM-233,General,2025-04-06,2025-04-20,2025-05-01,Returned Late,27.5
+TRX-1428,BK-105,Database System Concepts,Data Science,A. Tanenbaum,MEM-211,Faculty,2025-10-14,2025-10-28,2025-10-26,Returned On Time,0.0
+TRX-1429,BK-108,Clean Code,Data Science,M. Fowler,MEM-238,Faculty,2025-01-13,2025-01-27,2025-01-27,Returned On Time,0.0
+TRX-1430,BK-119,Introduction to Python,AI & ML,S. Russell,MEM-200,Student,2025-09-30,2025-10-14,2025-10-10,Returned On Time,0.0
+TRX-1431,BK-113,Machine Learning Yearning,Software Engineering,A. Silberschatz,MEM-246,General,2025-08-17,2025-08-31,2025-08-29,Returned On Time,0.0
+TRX-1432,BK-101,Artificial Intelligence: A Modern Approach,Data Science,S. Russell,MEM-229,General,2025-04-06,2025-04-20,2025-04-18,Returned On Time,0.0
+TRX-1433,BK-110,Clean Code,Networks,S. Russell,MEM-239,Student,2025-05-23,2025-06-06,2025-06-17,Returned Late,27.5
+TRX-1434,BK-119,Introduction to Python,Computer Science,M. Fowler,MEM-208,Staff,2025-01-01,2025-01-15,2025-01-15,Returned On Time,0.0
+TRX-1435,BK-114,Deep Learning with Python,Computer Science,G. van Rossum,MEM-213,General,2025-03-13,2025-03-27,2025-04-07,Returned Late,27.5
+TRX-1436,BK-109,Database System Concepts,Software Engineering,A. Tanenbaum,MEM-230,Staff,2025-08-09,2025-08-23,2025-08-27,Returned Late,10.0
+TRX-1437,BK-117,Artificial Intelligence: A Modern Approach,Networks,G. van Rossum,MEM-207,Staff,2025-08-15,2025-08-29,2025-08-27,Returned On Time,0.0
+TRX-1438,BK-101,Machine Learning Yearning,Software Engineering,M. Fowler,MEM-216,Faculty,2025-07-03,2025-07-17,2025-07-15,Returned On Time,0.0
+TRX-1439,BK-118,Operating System Principles,,E. Gamma,MEM-225,General,2025-06-13,2025-06-27,2025-07-28,Returned Late,77.5
+TRX-1440,BK-108,Operating System Principles,AI & ML,E. Gamma,MEM-218,Student,2025-08-26,2025-09-09,2025-09-05,Returned On Time,0.0
+TRX-1441,BK-117,Machine Learning Yearning,Computer Science,M. Fowler,MEM-207,General,2025-05-17,2025-05-31,2025-05-27,Returned On Time,0.0
+TRX-1442,BK-113,Computer Networking,Data Science,A. Tanenbaum,MEM-223,Student,2025-03-14,2025-03-28,2025-03-28,Returned On Time,0.0
+TRX-1443,BK-102,Machine Learning Yearning,Networks,A. Tanenbaum,MEM-226,Student,2025-09-28,2025-10-12,2025-10-10,Returned On Time,0.0
+TRX-1444,BK-114,Advanced Data Science,Data Science,M. Fowler,MEM-211,General,2025-03-28,2025-04-11,2025-04-07,Returned On Time,0.0
+TRX-1445,BK-101,Database System Concepts,Data Science,G. van Rossum,MEM-224,General,2025-04-26,2025-05-10,2025-05-06,Returned On Time,0.0
+TRX-1446,BK-105,Design Patterns,Data Science,E. Gamma,MEM-214,Student,2025-10-04,2025-10-18,2025-10-16,Returned On Time,0.0
+TRX-1447,BK-110,Deep Learning with Python,AI & ML,A. Tanenbaum,MEM-217,Student,2025-08-15,2025-08-29,2025-08-27,Returned On Time,0.0
+TRX-1448,BK-117,Design Patterns,Computer Science,M. Fowler,MEM-248,Student,2025-07-22,2025-08-05,2025-08-09,Returned Late,10.0
+TRX-1449,BK-104,Machine Learning Yearning,Software Engineering,G. van Rossum,MEM-237,Student,2025-03-14,2025-03-28,2025-04-01,Returned Late,10.0
+TRX-1450,BK-118,The Pragmatic Programmer,AI & ML,M. Fowler,MEM-211,General,2025-07-24,2025-08-07,2025-08-05,Returned On Time,0.0
+TRX-1451,BK-108,Data Structures and Algorithms,Data Science,G. van Rossum,MEM-246,Student,2025-01-31,2025-02-14,2025-02-10,Returned On Time,0.0
+TRX-1452,BK-107,Clean Code,Computer Science,S. Russell,MEM-241,Student,2025-07-28,2025-08-11,2025-08-07,Returned On Time,0.0
+TRX-1453,BK-114,Introduction to Python,Computer Science,E. Gamma,MEM-225,Student,2025-06-15,2025-06-29,2025-06-27,Returned On Time,0.0
+TRX-1454,BK-113,Machine Learning Yearning,,E. Gamma,MEM-226,Staff,2025-09-02,2025-09-16,2025-09-12,Returned On Time,0.0
+TRX-1455,BK-116,Data Structures and Algorithms,Computer Science,A. Silberschatz,MEM-225,General,2025-01-20,2025-02-03,2025-01-30,Returned On Time,0.0
+TRX-1456,BK-103,Introduction to Python,Computer Science,E. Gamma,MEM-213,Student,2025-02-13,2025-02-27,2025-02-23,Returned On Time,0.0
+TRX-1457,BK-111,Database System Concepts,Computer Science,A. Tanenbaum,MEM-218,Student,2025-06-12,2025-06-26,2025-06-24,Returned On Time,0.0
+TRX-1458,BK-116,Data Structures and Algorithms,Software Engineering,A. Silberschatz,MEM-200,Student,2025-06-13,2025-06-27,2025-06-25,Returned On Time,0.0
+TRX-1459,BK-115,Operating System Principles,Software Engineering,M. Fowler,MEM-215,Student,2025-10-11,2025-10-25,2025-10-23,Returned On Time,0.0
+TRX-1460,BK-107,Machine Learning Yearning,Software Engineering,S. Russell,MEM-238,Student,2025-09-21,2025-10-05,2025-10-01,Returned On Time,0.0
+TRX-1461,BK-115,Database System Concepts,Data Science,E. Gamma,MEM-217,Student,2025-08-09,2025-08-23,2025-08-21,Returned On Time,0.0
+TRX-1462,BK-104,Artificial Intelligence: A Modern Approach,Data Science,G. van Rossum,MEM-245,Student,2025-04-03,2025-04-17,2025-04-28,Returned Late,27.5
+TRX-1463,BK-107,Design Patterns,Computer Science,G. van Rossum,MEM-209,Faculty,2025-04-22,2025-05-06,2025-05-10,Returned Late,10.0
+TRX-1464,BK-110,Introduction to Python,AI & ML,M. Fowler,MEM-216,Staff,2025-08-02,2025-08-16,2025-08-20,Returned Late,10.0
+TRX-1465,BK-115,Data Structures and Algorithms,Software Engineering,G. van Rossum,MEM-241,Student,2025-03-17,2025-03-31,2025-03-31,Returned On Time,0.0
+TRX-1466,BK-108,Computer Networking,Data Science,A. Tanenbaum,MEM-246,Student,2025-09-13,2025-09-27,2025-10-08,Returned Late,27.5
+TRX-1467,BK-115,Computer Networking,,E. Gamma,MEM-241,Student,2025-04-04,2025-04-18,2025-04-14,Returned On Time,0.0
+TRX-1468,BK-119,Advanced Data Science,Data Science,A. Tanenbaum,MEM-210,Student,2025-08-02,2025-08-16,2025-09-16,Returned Late,77.5
+TRX-1469,BK-101,Deep Learning with Python,Computer Science,A. Silberschatz,MEM-217,Student,2025-09-29,2025-10-13,2025-10-11,Returned On Time,0.0
+TRX-1470,BK-115,Artificial Intelligence: A Modern Approach,Computer Science,M. Fowler,MEM-242,Student,2025-10-25,2025-11-08,2025-11-06,Returned On Time,0.0
+TRX-1471,BK-101,Design Patterns,Software Engineering,A. Tanenbaum,MEM-226,Faculty,2025-03-13,2025-03-27,2025-04-07,Returned Late,27.5
+TRX-1472,BK-107,Deep Learning with Python,AI & ML,G. van Rossum,MEM-242,Staff,2025-09-10,2025-09-24,2025-09-22,Returned On Time,0.0
+TRX-1473,BK-115,Operating System Principles,AI & ML,E. Gamma,MEM-228,Faculty,2025-04-11,2025-04-25,2025-04-21,Returned On Time,0.0
+TRX-1474,BK-112,Operating System Principles,AI & ML,G. van Rossum,MEM-236,Staff,2025-08-16,2025-08-30,2025-08-30,Returned On Time,0.0
+TRX-1475,BK-104,The Pragmatic Programmer,AI & ML,G. van Rossum,MEM-219,Staff,2025-06-13,2025-06-27,2025-06-25,Returned On Time,0.0
+TRX-1476,BK-103,Database System Concepts,Data Science,G. van Rossum,MEM-242,Faculty,2025-08-09,2025-08-23,2025-08-21,Returned On Time,0.0
+TRX-1477,BK-108,Data Structures and Algorithms,Software Engineering,A. Tanenbaum,MEM-237,Student,2025-08-27,2025-09-10,2025-09-10,Returned On Time,0.0
+TRX-1478,BK-117,Advanced Data Science,Networks,M. Fowler,MEM-222,Staff,2025-06-14,2025-06-28,2025-06-24,Returned On Time,0.0
+TRX-1479,BK-112,Design Patterns,Computer Science,A. Silberschatz,MEM-230,General,2025-05-27,2025-06-10,2025-06-06,Returned On Time,0.0
+TRX-1480,BK-118,Clean Code,Data Science,A. Tanenbaum,MEM-209,Student,2025-09-30,2025-10-14,2025-10-12,Returned On Time,0.0
+TRX-1481,BK-110,Machine Learning Yearning,Computer Science,A. Tanenbaum,MEM-220,Staff,2025-04-05,2025-04-19,2025-04-17,Returned On Time,0.0
+TRX-1482,BK-114,Deep Learning with Python,Networks,A. Silberschatz,MEM-206,Student,2025-10-07,2025-10-21,2025-10-19,Returned On Time,0.0
+TRX-1483,BK-117,The Pragmatic Programmer,Software Engineering,G. van Rossum,MEM-202,Student,2025-10-10,2025-10-24,2025-10-22,Returned On Time,0.0
+TRX-1484,BK-119,Artificial Intelligence: A Modern Approach,AI & ML,S. Russell,MEM-231,Student,2025-10-25,2025-11-08,2025-11-04,Returned On Time,0.0
+TRX-1485,BK-109,Clean Code,Networks,E. Gamma,MEM-219,Staff,2025-10-10,2025-10-24,2025-10-24,Returned On Time,0.0
+TRX-1486,BK-101,Deep Learning with Python,Computer Science,M. Fowler,MEM-225,Student,2025-08-14,2025-08-28,2025-09-01,Returned Late,10.0
+TRX-1487,BK-118,Deep Learning with Python,AI & ML,E. Gamma,MEM-226,Faculty,2025-02-26,2025-03-12,2025-04-12,Returned Late,77.5
+TRX-1488,BK-119,Data Structures and Algorithms,Networks,A. Silberschatz,MEM-245,Student,2025-05-26,2025-06-09,2025-06-05,Returned On Time,0.0
+TRX-1489,BK-105,Operating System Principles,Networks,M. Fowler,MEM-221,Faculty,2025-08-05,2025-08-19,2025-08-17,Returned On Time,0.0
+TRX-1490,BK-105,Database System Concepts,Networks,,MEM-215,Student,2025-05-29,2025-06-12,2025-06-12,Returned On Time,0.0
+TRX-1491,BK-105,Deep Learning with Python,Computer Science,G. van Rossum,MEM-222,Faculty,2025-07-18,2025-08-01,2025-07-28,Returned On Time,0.0
+TRX-1492,BK-114,Deep Learning with Python,Data Science,G. van Rossum,MEM-244,General,2025-04-14,2025-04-28,2025-04-24,Returned On Time,0.0
+TRX-1493,BK-102,Introduction to Python,AI & ML,A. Tanenbaum,MEM-245,Student,2025-10-15,2025-10-29,2025-11-02,Returned Late,10.0
+TRX-1494,BK-108,Artificial Intelligence: A Modern Approach,Computer Science,E. Gamma,MEM-201,Faculty,2025-08-07,2025-08-21,2025-08-17,Returned On Time,0.0
+TRX-1495,BK-110,Data Structures and Algorithms,Software Engineering,G. van Rossum,MEM-225,Student,2025-01-20,2025-02-03,2025-02-01,Returned On Time,0.0
+TRX-1496,BK-114,Introduction to Python,Computer Science,A. Silberschatz,MEM-228,General,2025-01-08,2025-01-22,2025-01-20,Returned On Time,0.0
+TRX-1497,BK-102,Clean Code,Software Engineering,M. Fowler,MEM-211,Faculty,2025-10-03,2025-10-17,2025-10-17,Returned On Time,0.0
+TRX-1498,BK-105,The Pragmatic Programmer,Networks,A. Tanenbaum,MEM-212,Faculty,2025-03-27,2025-04-10,2025-04-08,Returned On Time,0.0
+TRX-1499,BK-110,Database System Concepts,AI & ML,A. Silberschatz,MEM-225,Student,2025-01-26,2025-02-09,2025-02-05,Returned On Time,0.0
+TRX-1500,BK-118,Data Structures and Algorithms,Software Engineering,M. Fowler,MEM-214,Faculty,2025-09-24,2025-10-08,2025-10-08,Returned On Time,0.0
+TRX-1011,BK-100,Data Structures and Algorithms,Networks,A. Tanenbaum,MEM-243,Faculty,2025-02-04,2025-02-18,2025-02-16,Returned On Time,0.0
+TRX-1026,BK-117,Advanced Data Science,,E. Gamma,MEM-234,Faculty,2025-06-18,2025-07-02,2025-06-28,Returned On Time,0.0
