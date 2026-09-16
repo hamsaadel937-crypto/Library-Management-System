@@ -1,20 +1,12 @@
-# ============================================================
-# storage.py
-# Library Management System
-# ============================================================
-
 import json
 import csv
 import logging
 import hashlib
+import hmac
 from pathlib import Path
 
 from models import Book, User, BorrowRecord
 
-
-# ============================================================
-# BASE DIRECTORY
-# ============================================================
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -25,20 +17,10 @@ owner_file = BASE_DIR / "owner_profile.json"
 csv_file = BASE_DIR / "books.csv"
 
 
-# ============================================================
-# DEFAULT OWNER
-# ============================================================
+DEFAULT_OWNER_USERNAME = "library"
+DEFAULT_OWNER_PASSWORD = "lib123456"
+DEFAULT_OWNER_NAME = "Library Owner"
 
-DEFAULT_OWNER = {
-    "username": "library",
-    "password": "lib123456",
-    "full_name": "Library Owner"
-}
-
-
-# ============================================================
-# LOGGING
-# ============================================================
 
 logging.basicConfig(
     filename=BASE_DIR / "library.log",
@@ -48,24 +30,16 @@ logging.basicConfig(
 
 
 # ============================================================
-# PASSWORD HELPERS
+# PASSWORDS
 # ============================================================
 
 def hash_password(password):
-    """
-    Hash password using SHA-256.
-    """
-
     return hashlib.sha256(
-        password.encode("utf-8")
+        str(password).encode("utf-8")
     ).hexdigest()
 
 
 def is_hashed(password):
-    """
-    Check whether a password is already SHA-256 hashed.
-    """
-
     if not isinstance(password, str):
         return False
 
@@ -79,19 +53,19 @@ def is_hashed(password):
 
 
 def verify_password(password, stored_password):
-    """
-    Supports both old plaintext passwords and new hashed passwords.
-    """
 
     if not stored_password:
         return False
 
-    # New hashed password
     if is_hashed(stored_password):
-        return hash_password(password) == stored_password
 
-    # Old plaintext password
-    return password == stored_password
+        return hmac.compare_digest(
+            hash_password(password),
+            stored_password
+        )
+
+    # Backward compatibility
+    return str(password) == str(stored_password)
 
 
 # ============================================================
@@ -100,28 +74,18 @@ def verify_password(password, stored_password):
 
 class StorageManager:
 
-    # ========================================================
-    # BOOKS + RECORDS
-    # ========================================================
-
     @staticmethod
     def save_data(books, records):
 
-        books_list = []
+        books_list = [
+            book.to_dict()
+            for book in books.values()
+        ]
 
-        for book in books.values():
-
-            books_list.append(
-                book.to_dict()
-            )
-
-        records_list = []
-
-        for record in records:
-
-            records_list.append(
-                record.to_dict()
-            )
+        records_list = [
+            record.to_dict()
+            for record in records
+        ]
 
         with open(
             books_file,
@@ -153,20 +117,13 @@ class StorageManager:
             "Books and borrowing records saved."
         )
 
-    # ========================================================
-    # LOAD BOOKS + RECORDS
-    # ========================================================
-
     @staticmethod
     def load_data():
 
         books = {}
         records = []
 
-        # ----------------------------------------------------
         # Books
-        # ----------------------------------------------------
-
         if books_file.exists():
 
             try:
@@ -179,14 +136,22 @@ class StorageManager:
 
                     data = json.load(file)
 
-                    for item in data:
+                for item in data:
+
+                    try:
 
                         book = Book(
                             book_id=str(
-                                item.get("book_id", "")
+                                item.get(
+                                    "book_id",
+                                    ""
+                                )
                             ),
                             title=str(
-                                item.get("title", "")
+                                item.get(
+                                    "title",
+                                    "Unknown"
+                                )
                             ),
                             author=str(
                                 item.get(
@@ -213,21 +178,22 @@ class StorageManager:
                                 book.book_id
                             ] = book
 
+                    except (
+                        TypeError,
+                        ValueError
+                    ):
+                        continue
+
             except (
                 json.JSONDecodeError,
-                KeyError,
-                TypeError,
-                ValueError
+                OSError
             ):
 
                 logging.error(
                     "Could not load books.json."
                 )
 
-        # ----------------------------------------------------
-        # Borrow Records
-        # ----------------------------------------------------
-
+        # Borrowing records
         if records_file.exists():
 
             try:
@@ -240,7 +206,9 @@ class StorageManager:
 
                     data = json.load(file)
 
-                    for item in data:
+                for item in data:
+
+                    try:
 
                         record = BorrowRecord(
                             record_id=str(
@@ -277,20 +245,17 @@ class StorageManager:
 
                         records.append(record)
 
+                    except Exception:
+                        continue
+
             except (
                 json.JSONDecodeError,
-                KeyError,
-                TypeError,
-                ValueError
+                OSError
             ):
 
                 logging.error(
                     "Could not load borrowed_books.json."
                 )
-
-        logging.info(
-            "Books and records loaded."
-        )
 
         return books, records
 
@@ -301,13 +266,10 @@ class StorageManager:
     @staticmethod
     def save_users(users):
 
-        users_list = []
-
-        for user in users.values():
-
-            users_list.append(
-                user.to_dict()
-            )
+        users_list = [
+            user.to_dict()
+            for user in users.values()
+        ]
 
         with open(
             users_file,
@@ -326,73 +288,87 @@ class StorageManager:
             "Users saved."
         )
 
-    # ========================================================
-    # LOAD USERS
-    # ========================================================
-
     @staticmethod
     def load_users():
 
         users = {}
 
-        if users_file.exists():
+        if not users_file.exists():
+            return users
 
-            try:
+        try:
 
-                with open(
-                    users_file,
-                    "r",
-                    encoding="utf-8"
-                ) as file:
+            with open(
+                users_file,
+                "r",
+                encoding="utf-8"
+            ) as file:
 
-                    data = json.load(file)
+                data = json.load(file)
 
-                    for item in data:
+            for item in data:
 
-                        user = User(
-                            username=str(
-                                item.get(
-                                    "username",
-                                    ""
-                                )
-                            ),
-                            password=str(
-                                item.get(
-                                    "password",
-                                    ""
-                                )
-                            ),
-                            full_name=str(
-                                item.get(
-                                    "full_name",
-                                    ""
-                                )
-                            )
+                username = str(
+                    item.get(
+                        "username",
+                        ""
+                    )
+                ).strip()
+
+                if not username:
+                    continue
+
+                user = User(
+                    username=username,
+                    password=str(
+                        item.get(
+                            "password",
+                            ""
                         )
-
-                        if user.username:
-
-                            users[
-                                user.username
-                            ] = user
-
-            except (
-                json.JSONDecodeError,
-                KeyError
-            ):
-
-                logging.error(
-                    "Could not load users.json."
+                    ),
+                    full_name=str(
+                        item.get(
+                            "full_name",
+                            ""
+                        )
+                    )
                 )
+
+                users[username] = user
+
+        except (
+            json.JSONDecodeError,
+            OSError
+        ):
+
+            logging.error(
+                "Could not load users.json."
+            )
 
         return users
 
     # ========================================================
-    # OWNER PROFILE
+    # OWNER
     # ========================================================
 
     @staticmethod
     def save_owner_profile(owner):
+
+        owner_to_save = dict(owner)
+
+        if (
+            "password" in owner_to_save
+            and owner_to_save["password"]
+            and not is_hashed(
+                owner_to_save["password"]
+            )
+        ):
+
+            owner_to_save["password"] = (
+                hash_password(
+                    owner_to_save["password"]
+                )
+            )
 
         with open(
             owner_file,
@@ -401,7 +377,7 @@ class StorageManager:
         ) as file:
 
             json.dump(
-                owner,
+                owner_to_save,
                 file,
                 indent=4,
                 ensure_ascii=False
@@ -410,10 +386,6 @@ class StorageManager:
         logging.info(
             "Owner profile saved."
         )
-
-    # ========================================================
-    # LOAD OWNER
-    # ========================================================
 
     @staticmethod
     def load_owner_profile():
@@ -430,22 +402,56 @@ class StorageManager:
 
                     owner = json.load(file)
 
-                    return owner
+                owner.setdefault(
+                    "username",
+                    DEFAULT_OWNER_USERNAME
+                )
+
+                owner.setdefault(
+                    "full_name",
+                    DEFAULT_OWNER_NAME
+                )
+
+                owner.setdefault(
+                    "password",
+                    hash_password(
+                        DEFAULT_OWNER_PASSWORD
+                    )
+                )
+
+                # Migrate old plaintext password
+                if not is_hashed(
+                    owner["password"]
+                ):
+
+                    owner["password"] = (
+                        hash_password(
+                            owner["password"]
+                        )
+                    )
+
+                    StorageManager.save_owner_profile(
+                        owner
+                    )
+
+                return owner
 
             except (
                 json.JSONDecodeError,
-                KeyError
+                OSError
             ):
 
                 logging.error(
                     "Could not load owner profile."
                 )
 
-        # ----------------------------------------------------
-        # Create default owner
-        # ----------------------------------------------------
-
-        owner = dict(DEFAULT_OWNER)
+        owner = {
+            "username": DEFAULT_OWNER_USERNAME,
+            "password": hash_password(
+                DEFAULT_OWNER_PASSWORD
+            ),
+            "full_name": DEFAULT_OWNER_NAME
+        }
 
         StorageManager.save_owner_profile(
             owner
@@ -454,7 +460,7 @@ class StorageManager:
         return owner
 
     # ========================================================
-    # EXPORT BOOKS TO CSV
+    # CSV EXPORT
     # ========================================================
 
     @staticmethod
