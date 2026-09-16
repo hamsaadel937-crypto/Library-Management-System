@@ -1,343 +1,429 @@
 # 📚 Library Management System
 
-A Python-based Library Management System designed to automate library operations and provide a simple, reliable, and user-friendly experience for managing books, users, borrowing transactions, data analysis, and visualizations.
+A complete Python-based Library Management System developed with Streamlit and extended into a full **Data Wrangling, EDA, Statistics, Visualization, and Interactive Dashboard project**.
+
+The project progressed through:
+
+```text
+Module 1 → Build the Library Management System
+Module 2 → Mathematics & Statistics
+Module 3 → Data Wrangling, EDA & Visualization
+🎯 Project Goal
+
+The project transforms raw library transaction data into:
+
+Raw Data
+   ↓
+Data Quality Assessment
+   ↓
+Data Cleaning
+   ↓
+Outlier Detection
+   ↓
+Feature Engineering
+   ↓
+NumPy Analysis
+   ↓
+Pandas Data Wrangling
+   ↓
+Polars Analysis
+   ↓
+EDA
+   ↓
+Statistical Exploration
+   ↓
+Visualization
+   ↓
+Interactive Plotly Dashboard
+   ↓
+Insights
+   ↓
+Recommendations
+   ↓
+Final Conclusion
+📊 Dataset
 
-The project combines **Python programming, Streamlit, data analysis, data cleaning, statistical analysis, and visualization** in one integrated application.
+The main dataset is:
 
----
+library_transactions.csv
+
+The dataset contains library transaction information including:
+
+Transaction ID
+Book ID
+Book Title
+Category
+Author
+Member ID
+Member Type
+Borrow Date
+Due Date
+Return Date
+Status
+Fine Amount
+
+The dataset represents borrowing transactions, not one row per book.
+
+Therefore:
+
+Transactions ≠ Books
+
+The library inventory is created using the unique Book_ID values from the dataset.
+
+🧹 Module 3 - Data Quality Assessment
+
+The project checks the raw dataset for:
+
+Missing Values
+Duplicate Rows
+Duplicate Transaction IDs
+Incorrect Data Types
+Invalid Values
+Inconsistent Categories
+Invalid Dates
+Numerical Problems
+Potential Outliers
+
+A dedicated Data Quality page displays the detected problems before cleaning.
+
+🧽 Data Cleaning
+
+The cleaning pipeline includes:
+
+Removing exact duplicate rows
+Standardizing column names
+Removing unnecessary spaces
+Standardizing text values
+Handling missing categorical values
+Converting dates to datetime
+Converting Fine Amount to numeric
+Handling invalid negative fines
+Standardizing transaction status
+Preparing the dataset for analysis
 
-## 📌 Project Overview
+Missing categorical information is represented as:
 
-The Library Management System is a modular Python application that helps manage library books and borrowing operations through an interactive Streamlit interface.
+Unknown
 
-The system supports two main roles:
+instead of inventing values.
 
-- 👨‍💼 **Library Owner**
-- 👤 **Regular User**
+📦 Outlier Detection
 
-The Owner has administrative access to manage the library inventory and analyze library data, while Regular Users can register, search for books, borrow available books, return books, and manage their own profiles.
+The project uses the IQR method.
 
-The project also uses a real library transaction dataset (`library_transactions.csv`) for data cleaning, analysis, visualization, and generating the initial library book inventory.
+IQR = Q3 - Q1
 
----
+Lower Bound = Q1 - 1.5 × IQR
 
-# ✨ Main Features
+Upper Bound = Q3 + 1.5 × IQR
 
-## 👨‍💼 Library Owner
+Potential outliers are identified and visualized using Box Plots.
 
-The Library Owner has administrative access to the system.
+The project does not randomly remove outliers.
 
-The Owner can:
+🔧 Feature Engineering
 
-- ➕ Add new books
-- ✏️ Update book information
-- ❌ Delete books
-- 🔍 Search books
-- 📚 View all books
-- ✅ View available books
-- 📋 View borrowing records
-- 🔄 Synchronize books from the CSV dataset
-- 📊 Analyze library transaction data
-- 📈 Create data visualizations
-- 📤 Export books to CSV
-- 👤 Manage Owner profile
-- 🔐 Change username and password
-- 💾 Manage persistent library data
+New analytical features are created from the original data:
 
----
+Borrow Year
+Borrow Month
+Borrow Month Name
+Borrow Day
+Borrow Day Name
+Borrow Duration
+Due Duration
+Fine Group
 
-## 👤 Regular User
+These features make time-based and behavioral analysis easier.
 
-Regular users can create accounts and use the library services.
+🔢 NumPy Analysis
 
-Users can:
+NumPy is used for:
 
-- 📝 Register a new account
-- 🔐 Login securely
-- 👤 Manage their profile
-- ✏️ Edit full name and username
-- 🔑 Change their password
-- 🔍 Search books by ID
-- 🔍 Search books by title
-- 🔍 Search books by author
-- 📚 View available books
-- 📥 Borrow books
-- 📤 Return borrowed books
-- 📋 View their own borrowing records
+NumPy Arrays
+Indexing
+Slicing
+Boolean Masking
+Vectorization
+Mean
+Median
+Standard Deviation
+Variance
+Percentiles
+Matrix Operations
+Linear Algebra
+🐼 Pandas Data Wrangling
 
-Users do not have permission to modify the library inventory.
+The project demonstrates:
 
----
+Filtering
+Sorting
+GroupBy
+Aggregation
+Merge
+Join
+Pivot Tables
+Reshaping
 
-# 🔐 Authentication & Profile Management
+Example:
 
-The system provides separate authentication for the Library Owner and Regular Users.
+df.groupby("Category")["Fine_Amount"].mean()
 
-### Owner
+The results are interpreted instead of simply displayed.
 
-The Owner can:
+⚡ Polars Analysis
 
-- Login using username and password
-- Update full name
-- Update username
-- Change password
-- Manage library inventory
-- Access analysis and visualization features
+Polars is used for selected data-wrangling operations:
 
-### User
+Polars DataFrames
+Selecting columns
+Filtering
+Grouping
+Aggregation
+Lazy API
 
-Regular users can:
+The project also provides a comparison between:
 
-- Create an account
-- Login using username and password
-- Update their personal information
-- Change their password
-- Manage their own borrowing activities
+Pandas
+vs
+Polars
+🔎 Exploratory Data Analysis
 
-Passwords are not displayed as plain text in the application.
+EDA is divided into three levels.
 
----
+Univariate Analysis
 
-# 📚 Book Management
+Analysis of one variable, such as:
 
-The system provides complete CRUD operations for library books.
+Fine Amount
+Transaction Status
+Category
+Member Type
+Bivariate Analysis
 
-### Create
+Relationships between two variables, such as:
 
-The Owner can add a new book with:
+Borrow Duration vs Fine Amount
+Category vs Fine Amount
+Multivariate Analysis
 
-- Book ID
-- Title
-- Author
-- Category
-- Number of available copies
+Analysis involving multiple variables, such as:
 
-### Read
+Category
+Member Type
+Fine Amount
+📐 Statistical Analysis
 
-The system allows users and the Owner to:
+The project includes:
 
-- View all books
-- View available books
-- Search by Book ID
-- Search by Title
-- Search by Author
+Mean
+Median
+Mode
+Range
+Variance
+Standard Deviation
+Quartiles
+IQR
+Skewness
+Correlation
+Probability
+Expected Value
+Sampling
+Confidence Intervals
+Hypothesis Testing
+One-Way ANOVA
+Linear Algebra
 
-### Update
+Statistical results are interpreted in the application.
 
-The Owner can modify existing book information.
+📊 Data Visualization
 
-### Delete
+The project includes:
 
-The Owner can remove books from the library inventory while maintaining data consistency with active borrowing records.
+Bar Chart
 
----
+Used to compare transaction activity between categories.
 
-# 🔄 CSV Dataset Integration
+Histogram
 
-The project uses:
+Used to understand the distribution of Fine Amount.
 
-`library_transactions.csv`
+Line Chart
 
-as the main dataset for library transaction analysis.
+Used to analyze monthly borrowing trends.
 
-The dataset contains information such as:
+Box Plot
 
-- Transaction ID
-- Book ID
-- Book Title
-- Category
-- Author
-- Member ID
-- Member Type
-- Borrow Date
-- Due Date
-- Return Date
-- Status
-- Fine Amount
+Used to understand numerical distributions and detect potential outliers.
 
-The application cleans and standardizes the dataset before performing analysis.
+Scatter Plot
 
-Unique books are extracted from the transaction dataset and can be synchronized with the library inventory.
+Used to investigate relationships between Borrow Duration and Fine Amount.
 
-This allows the CSV dataset to serve as the initial source of books available in the system.
+Correlation Heatmap
 
----
+Used to visualize relationships between numerical variables.
 
-# 🧹 Data Cleaning & Data Quality
+📈 Interactive Plotly Dashboard
 
-The application performs several data cleaning operations, including:
+The project includes an interactive dashboard containing:
 
-- Standardizing column names
-- Removing duplicate records
-- Handling missing values
-- Converting date columns to datetime format
-- Cleaning text fields
-- Handling invalid numeric values
-- Detecting duplicate transaction IDs
-- Handling missing categories and authors
-- Validating transaction information
-- Preparing clean data for analysis
+Total Transactions
+Unique Books
+Unique Members
+Total Fines
+Monthly Borrowing Trends
+Transactions by Category
+Member Type Distribution
+Average Fine by Category
 
-A dedicated **Data Quality** section is included to help identify problems in the original dataset.
+The dashboard supports interactive filters and Plotly interactions.
 
----
+💡 Data Storytelling
 
-# 📊 Exploratory Data Analysis
+The analysis follows:
 
-The system provides Exploratory Data Analysis (EDA) for the library transaction dataset.
+Data
+ ↓
+Finding
+ ↓
+Insight
+ ↓
+Recommendation
 
-Analysis includes:
+The project identifies:
 
-- Transaction distribution
-- Book popularity
-- Category distribution
-- Member type distribution
-- Borrowing trends
-- Return status analysis
-- Fine amount analysis
-- Missing values
-- Duplicate records
-- Outlier detection
+High-demand categories
+Frequently borrowed books
+Active member types
+Fine patterns
+Monthly borrowing patterns
+Data quality problems
+Potential outliers
 
-The application provides both numerical summaries and visual insights.
+Based on these findings, recommendations are generated for library inventory and management.
 
----
+👨‍💼 Owner Features
 
-# 📈 Data Visualization
+The Library Owner can:
 
-The system supports several visualization techniques.
+Add Books
+Update Books
+Remove Books
+Search Books
+View All Books
+View Borrowing Records
+Synchronize Books from CSV
+Export Books
+Access Data Quality
+Access Data Cleaning
+Access EDA
+Access Statistics
+Access Visualizations
+Access Interactive Dashboard
+View Insights
+View Final Conclusion
+Edit Owner Profile
 
-### Available Visualizations
+Owner Profile allows updating:
 
-- 📊 Bar Charts
-- 📉 Histograms
-- 📦 Box Plots
-- 🔵 Scatter Plots
-- 📈 Line Charts
-- 🔥 Correlation Heatmaps
-- 📊 Category Distribution Charts
-- 📚 Book and Transaction Analysis Charts
+Full Name
+Username
+Password
+👤 User Features
 
-These visualizations help identify patterns and trends in library activity.
+Regular Users can:
 
----
+Register
+Login
+Search Books
+View Available Books
+Borrow Books
+Return Books
+View Borrowed Books
+Edit their profile
 
-# 📐 Statistical Analysis
+User Profile allows updating:
 
-The project includes several statistical analysis techniques.
+Full Name
+Username
+Password
 
-### Descriptive Statistics
+Passwords are entered through password-protected fields and stored using hashing.
 
-- Mean
-- Median
-- Mode
-- Range
-- Variance
-- Standard Deviation
-- Quartiles
-- Interquartile Range (IQR)
+📚 Library Inventory
 
-### Distribution Analysis
+The library inventory is generated from unique books in:
 
-- Skewness
-- Outlier Detection
+library_transactions.csv
 
-### Probability & Sampling
+The system uses:
 
-- Probability calculations
-- Expected Value
-- Sampling
-- Confidence Intervals
+Book_ID
+Book_Title
+Author
+Category
 
-### Statistical Testing
+to create unique library books.
 
-- Hypothesis Testing
-- One-Way ANOVA
+For example:
 
-### Linear Algebra
+500 Transactions
+       ↓
+Unique Book IDs
+       ↓
+Library Inventory
 
-The project also demonstrates basic linear algebra operations using NumPy.
+Repeated transactions for the same Book ID do not create duplicate books.
 
----
-
-# 🔎 Search System
-
-Users can search for books using:
-
-### Book ID
-
-Search for a specific book using its unique ID.
-
-### Title
-
-Search for books using part or all of the title.
-
-### Author
-
-Search for books written by a specific author.
-
-The search results are displayed through the Streamlit interface.
-
----
-
-# 📥 Borrowing System
+📥 Borrowing System
 
 When a user borrows a book:
 
-1. The system checks whether the book exists.
-2. The system checks available copies.
-3. A borrowing record is created.
-4. The available copies are decreased.
-5. The transaction is saved to persistent storage.
+The system checks that the book exists.
+The system checks available copies.
+A borrowing record is created.
+Available copies decrease.
+Data is saved.
+📤 Returning System
 
-Each borrowing record is associated with the user's account.
+When a user returns a book:
 
----
+The system identifies the active borrowing record.
+The borrowing record is removed.
+Available copies increase.
+Updated data is saved.
+🔐 Authentication
 
-# 📤 Return System
+The project provides role-based authentication:
 
-Users can return books they previously borrowed.
+Owner
+  ↓
+Administrative Features
 
-When a book is returned:
+User
+  ↓
+Library Services
 
-1. The system verifies the borrowing record.
-2. The borrowing record is removed/updated.
-3. The available book count is increased.
-4. The updated data is saved.
+Passwords are not displayed as plain text.
 
-This keeps the library inventory synchronized with current borrowing activity.
+Passwords are stored using SHA-256 hashing.
 
----
+💾 Data Persistence
 
-# 💾 Data Persistence
+The project uses JSON files for persistent application data:
 
-The application uses local files for persistent storage.
+books.json
+borrowed_books.json
+users.json
+owner_profile.json
 
-### JSON Files
+Additional files include:
 
-- `books.json`
-- `borrowed_books.json`
-- `users.json`
-- `owner_profile.json`
-
-### CSV Files
-
-- `library_transactions.csv`
-- `books.csv`
-
-### Logging
-
-The application also maintains:
-
-- `library.log`
-
-for recording important application events and errors.
-
----
-
-# 🏗️ Project Structure
-
-```text
+library_transactions.csv
+books.csv
+library.log
+🧩 Project Structure
 Library-Management-System/
 │
 ├── app.py
@@ -347,256 +433,115 @@ Library-Management-System/
 ├── library_service.py
 │
 ├── library_transactions.csv
-├── books.csv
 ├── books.json
 ├── borrowed_books.json
 ├── users.json
 ├── owner_profile.json
+├── books.csv
 ├── library.log
-│
+├── requirements.txt
 └── README.md
-🧩 Main Python Modules
-app.py
-
-The main Streamlit application.
-
-It handles:
-
-User interface
-Authentication
-Owner dashboard
-User dashboard
-Book management
-Borrowing and returning
-Data analysis
-Visualization
-Statistical analysis
-Profile management
-CSV integration
-models.py
-
-Contains the main data models and custom exceptions.
-
-Includes:
-
-Book
-User
-BorrowRecord
-Pydantic validation schemas
-Custom library exceptions
-storage.py
-
-Responsible for persistent data storage.
-
-It handles:
-
-Loading data
-Saving data
-JSON storage
-User storage
-Owner profile storage
-CSV export
-Password hashing and verification
-Logging
-library_service.py
-
-Contains the library business logic, including operations related to:
-
-Books
-Borrowing
-Returning
-Searching
-Inventory management
-main.py
-
-Provides the main Python entry point for the project.
-
 🛠️ Technologies Used
-Programming Language
-🐍 Python
-Web Application
+Python
 Streamlit
-Data Analysis
 Pandas
 NumPy
-Data Visualization
+Polars
 Matplotlib
 Seaborn
 Plotly
-Statistics
 SciPy
-Data Validation
 Pydantic
-Data Storage
 JSON
 CSV
-Python Concepts
-Dataclasses
-Functions
+Logging
+🧠 Main Concepts
+
+The project demonstrates:
+
 Object-Oriented Programming
-Exception Handling
-File Handling
 Modular Programming
-Authentication
-Data Validation
-🧠 Programming & Data Science Concepts
-
-This project demonstrates several programming and Data Science concepts:
-
-Object-Oriented Programming
 Dataclasses
-Pydantic Models
+Pydantic Validation
 Exception Handling
 File Handling
-JSON Persistence
-CSV Processing
+Authentication
+Role-Based Access
+Password Hashing
+CRUD Operations
 Data Cleaning
 Data Wrangling
-Exploratory Data Analysis
-Statistical Analysis
-Data Visualization
-NumPy Arrays
-Pandas DataFrames
+Outlier Detection
+Feature Engineering
+NumPy
+Pandas
+Polars
+EDA
+Statistics
 Probability
 Sampling
 Hypothesis Testing
 ANOVA
-Linear Algebra
-CRUD Operations
-Authentication
-Role-Based Access
-Password Hashing
-Logging
+Visualization
+Interactive Dashboards
+Data Storytelling
 🚀 Installation
-1. Clone the Repository
+
+Clone the repository:
+
 git clone https://github.com/hamsaadel937-crypto/Library-Management-System.git
 
-Move into the project directory:
+Open the project:
 
 cd Library-Management-System
-2. Install Required Libraries
 
-Install the required Python packages:
+Install requirements:
 
-pip install streamlit pandas numpy matplotlib seaborn plotly scipy pydantic
-▶️ Run the Application
+pip install -r requirements.txt
 
-Start the Streamlit application using:
+Run:
 
 streamlit run app.py
+🔑 Default Owner Account
+Username: library
+Password: lib123456
 
-The application will open in your browser.
+The password is not displayed inside the application interface.
 
-🔑 User Flow
-Owner Flow
-Owner Login
-     ↓
-Owner Dashboard
-     ↓
-Manage Books
-     ↓
-Add / Update / Delete / Search
-     ↓
-Data Analysis
-     ↓
-Visualization
-     ↓
-Statistical Analysis
-     ↓
-Export Data
-User Flow
-Register
-   ↓
-Login
-   ↓
-User Dashboard
-   ↓
-Search / View Books
-   ↓
-Borrow Book
-   ↓
-View Borrowed Books
-   ↓
-Return Book
-📊 Data Analysis Workflow
-
-The data analysis pipeline follows these steps:
-
-Raw CSV Dataset
-       ↓
-Column Standardization
-       ↓
-Data Cleaning
-       ↓
-Missing Value Handling
-       ↓
-Duplicate Detection
-       ↓
-Data Validation
-       ↓
-Feature Engineering
-       ↓
-Exploratory Data Analysis
-       ↓
-Statistical Analysis
-       ↓
-Visualization
-       ↓
-Insights & Reports
-🔄 Library Inventory Workflow
-
-The library inventory can be initialized from the transaction dataset.
-
-library_transactions.csv
-          ↓
-     Read Dataset
-          ↓
-   Clean & Standardize
-          ↓
- Extract Unique Books
-          ↓
-   Create Book Records
-          ↓
-      books.json
-          ↓
- Library Management System
-
-This makes the transaction dataset useful not only for analysis but also for creating the initial library book inventory.
-
-🛡️ Error Handling
-
-The application includes custom exceptions for common library operations, such as:
-
-BookNotFoundError
-DuplicateBookError
-InsufficientCopiesError
-UnauthorizedError
-UserNotFoundError
-DuplicateUserError
-BorrowRecordNotFoundError
-
-These exceptions help the application handle invalid operations safely.
-
-📌 Project Highlights
-
-Some of the main strengths of this project are:
-
-Modular Python architecture
-Interactive Streamlit interface
-Role-based access
-CRUD book management
-User registration and authentication
-Borrowing and returning system
-CSV dataset integration
-Data cleaning and quality analysis
-Exploratory Data Analysis
-Statistical analysis
-Data visualization
-Persistent JSON storage
-CSV export
-Logging
-Password protection and hashing
-Exception handling
+🎯 Final Project Pipeline
+Existing Library Management System
+            ↓
+       Data Collection
+            ↓
+   Data Quality Assessment
+            ↓
+       Data Cleaning
+            ↓
+    Outlier Detection
+            ↓
+    Feature Engineering
+            ↓
+       NumPy Analysis
+            ↓
+    Pandas Wrangling
+            ↓
+      Polars Analysis
+            ↓
+            EDA
+       ↙      ↓      ↘
+Univariate  Bivariate  Multivariate
+            ↓
+ Statistical Exploration
+            ↓
+      Visualization
+            ↓
+ Interactive Plotly Dashboard
+            ↓
+      Data Storytelling
+            ↓
+   Insights & Recommendations
+            ↓
+       Final Conclusion
 👩‍💻 Team
 Hamsa Adel
 Radwa Mohamed
@@ -609,16 +554,6 @@ Ahmed Heary
 
 Arabian Academy
 
-🎓 Project Purpose
+📄 Purpose
 
-This project was developed as a Python Final Project and combines software development with Data Science concepts.
-
-It demonstrates how Python can be used to build an interactive management system while also applying:
-
-Data Wrangling
-Exploratory Data Analysis
-Statistics
-Visualization
-Data Validation
-File Management
-Object-Oriented Programming
+This project was developed as an educational final project demonstrating the progression from a traditional Python Library Management System into a complete real-world Data Analysis project.
